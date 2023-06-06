@@ -1,11 +1,13 @@
 import { useState } from "react";
 import "./App.css";
-import { HeaderMegaMenu } from "./components/Header";
+import Routing from "./components/Routing";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  return <></>;
+  return (
+    <>
+      <Routing />
+    </>
+  );
 }
 
 export default App;
