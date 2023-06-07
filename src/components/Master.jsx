@@ -6,9 +6,7 @@ const Master = () => {
   return (
     <div className="h-100">
       <Header />
-      <div className="h-100">
-        <Outlet />
-      </div>
+      <Outlet />
     </div>
   );
 };
