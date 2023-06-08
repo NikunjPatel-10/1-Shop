@@ -1,14 +1,14 @@
 // Card styles goes here
 .card {
     box-shadow: $card-box-shadow;
-    width: 250px;
-    height: 270px;
+    height: 250px;
+    width: 230px;
+    border-radius: 7px;
 
     .image-wrapper {
-        height: 220px;
+        height: 170px;
         overflow: hidden;
-        width: 220px;
-        object-fit: contain;
+        // border-radius: 7px;
 
         img {
             height: 100%;
@@ -16,7 +16,6 @@
             aspect-ratio: 3/2;
         }
 
-        // object-fit: cover;
     }
 
     // Display only two lines of text
