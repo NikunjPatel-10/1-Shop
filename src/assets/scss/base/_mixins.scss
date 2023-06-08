@@ -1,1 +1,6 @@
 // All the SCSS mixins goes here
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

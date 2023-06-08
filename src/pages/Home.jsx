@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { getMenProducts, getproducts } from "../services/apiservice";
 import useMenData from "../hooks/useMenData";
 import Card from "../components/Card";
 import useWomenData from "../hooks/useWomenData";
@@ -15,32 +14,32 @@ const Home = () => {
     setWomenData(womenProducts);
   }, [data, womenProducts]);
   // console.log(mendata);
-
-  const products = getproducts();
+  const menLastFiveData = mendata.slice(-5);
+  const womenLastFiveData = womendata.slice(-5);
+  // const products = getproducts();
   return (
-    <div className="h-100 pt-4">
-      <div className="main-wrapper">
-        <div className="d-flex justify-content-between align-items-center pb-2">
+    <div className=" p-2 ">
+      <div className="main-wrapper ">
+        <div className="d-flex justify-content-between align-items-center ">
           <span>For men</span>
           <span className="see-all-text">SEE ALL</span>
         </div>
         <div className="row">
-          {mendata.map((res) => {
+          {menLastFiveData.map((res) => {
             // console.log(res);
             return <Card key={res.id} cardData={res} />;
           })}
         </div>
-        <div>
-          <div className="d-flex justify-content-between py-2">
-            <span>For Women</span>
-            <span className="see-all-text">SEE ALL</span>
-          </div>
-          <div className="row">
-            {womendata.map((res) => {
-              // console.log(res);
-              return <Card key={res.id} cardData={res} />;
-            })}
-          </div>
+
+        <div className="d-flex justify-content-between py-2">
+          <span>For Women</span>
+          <span className="see-all-text">SEE ALL</span>
+        </div>
+        <div className="row">
+          {womenLastFiveData.map((res) => {
+            // console.log(res);
+            return <Card key={res.id} cardData={res} />;
+          })}
         </div>
       </div>
     </div>
