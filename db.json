@@ -24,57 +24,57 @@
             "m5": {
                 "name": "T-shirt ",
                 "img": "https://images.unsplash.com/photo-1627225925683-1da7021732ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
-                "price": "550"
+                "price": "650"
             },
             "m6": {
                 "name": "T-shirt ",
                 "img": "https://images.unsplash.com/photo-1627225925683-1da7021732ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
-                "price": "550"
+                "price": "700"
             },
             "m7": {
                 "name": "T-shirt ",
                 "img": "https://images.unsplash.com/photo-1627225925683-1da7021732ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
-                "price": "550"
+                "price": "850"
             },
             "m8": {
                 "name": "T-shirt ",
                 "img": "https://images.unsplash.com/photo-1627225925683-1da7021732ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
-                "price": "550"
+                "price": "700"
             },
             "m9": {
                 "name": "T-shirt ",
                 "img": "https://images.unsplash.com/photo-1627225925683-1da7021732ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
-                "price": "550"
+                "price": "810"
             },
             "m10": {
                 "name": "T-shirt ",
                 "img": "https://images.unsplash.com/photo-1627225925683-1da7021732ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
-                "price": "550"
+                "price": "610"
             },
             "m11": {
                 "name": "polo-T-shirt ",
                 "img": "https://images.unsplash.com/photo-1622470953794-aa9c70b0fb9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
-                "price": "550"
+                "price": "900"
             },
             "m12": {
                 "name": "polo-T-shirt ",
-                "img": "https://images.unsplash.com/photo-1622470953794-aa9c70b0fb9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
-                "price": "550"
+                "img": "https://images.unsplash.com/photo-1571945153237-4929e783af4a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+                "price": "700"
             },
             "m13": {
                 "name": "polo-T-shirt ",
                 "img": "https://images.unsplash.com/photo-1622470953794-aa9c70b0fb9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
-                "price": "550"
+                "price": "600"
             },
             "m14": {
                 "name": "polo-T-shirt ",
                 "img": "https://images.unsplash.com/photo-1622470953794-aa9c70b0fb9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
-                "price": "550"
+                "price": "750"
             },
             "m15": {
-                "name": "polo-T-shirt ",
-                "img": "https://images.unsplash.com/photo-1622470953794-aa9c70b0fb9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
-                "price": "550"
+                "name": "black-T-shirt ",
+                "img": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+                "price": "800"
             }
         },
         "women": {
@@ -86,22 +86,22 @@
             "w2": {
                 "name": "T-shirt ",
                 "img": "https://img.freepik.com/free-photo/pretty-young-stylish-sexy-woman-pink-luxury-dress-summer-fashion-trend-chic-style-sunglasses-blue-studio-background-shopping-holding-paper-bags-talking-mobile-phone-shopaholic_285396-2957.jpg?w=1380&t=st=1686143603~exp=1686144203~hmac=88de2477feb6b36a9bdad72e9d4c5c6bba0188550c6a3a64cfe9e0533990a311",
-                "price": "550"
+                "price": "650"
             },
             "w3": {
                 "name": "T-shirt ",
                 "img": "https://as2.ftcdn.net/v2/jpg/03/33/80/89/1000_F_333808972_qFA3Rjgk56Xo4N80kI1IvaeSCtdLeQcK.jpg",
-                "price": "550"
+                "price": "750"
             },
             "w4": {
                 "name": "T-shirt ",
                 "img": "https://img.freepik.com/free-photo/stylish-woman-summer-outfit-isolated-posing-fashion-trend-isolated_285396-478.jpg?w=1380&t=st=1686143715~exp=1686144315~hmac=f4c2be4ca7d9ca67443cc31393c7624bf50a3e94469230477a627ffa87aabf1a",
-                "price": "550"
+                "price": "850"
             },
             "w5": {
                 "name": "T-shirt ",
                 "img": "https://img.freepik.com/free-photo/young-teen-woman-sunglasses-hat-holding-shopping-bags-her-hands-feeling-so-happiness-isolated-green-wall_231208-2681.jpg?w=1380&t=st=1686143747~exp=1686144347~hmac=62920abeafcc7ad416865564514ce5702ddaf9d235d114152257ed0a9030241a",
-                "price": "550"
+                "price": "450"
             },
             "w6": {
                 "name": "T-shirt ",
@@ -111,47 +111,47 @@
             "w7": {
                 "name": "T-shirt ",
                 "img": "https://img.freepik.com/free-photo/young-teen-woman-sunglasses-hat-holding-shopping-bags-her-hands-feeling-so-happiness-isolated-green-wall_231208-2681.jpg?w=1380&t=st=1686143747~exp=1686144347~hmac=62920abeafcc7ad416865564514ce5702ddaf9d235d114152257ed0a9030241a",
-                "price": "550"
+                "price": "400"
             },
             "w8": {
                 "name": "T-shirt ",
                 "img": "https://img.freepik.com/free-photo/young-teen-woman-sunglasses-hat-holding-shopping-bags-her-hands-feeling-so-happiness-isolated-green-wall_231208-2681.jpg?w=1380&t=st=1686143747~exp=1686144347~hmac=62920abeafcc7ad416865564514ce5702ddaf9d235d114152257ed0a9030241a",
-                "price": "550"
+                "price": "350"
             },
             "w9": {
                 "name": "T-shirt ",
                 "img": "https://img.freepik.com/free-photo/young-teen-woman-sunglasses-hat-holding-shopping-bags-her-hands-feeling-so-happiness-isolated-green-wall_231208-2681.jpg?w=1380&t=st=1686143747~exp=1686144347~hmac=62920abeafcc7ad416865564514ce5702ddaf9d235d114152257ed0a9030241a",
-                "price": "550"
+                "price": "250"
             },
             "w10": {
                 "name": "T-shirt ",
                 "img": "https://img.freepik.com/free-photo/young-teen-woman-sunglasses-hat-holding-shopping-bags-her-hands-feeling-so-happiness-isolated-green-wall_231208-2681.jpg?w=1380&t=st=1686143747~exp=1686144347~hmac=62920abeafcc7ad416865564514ce5702ddaf9d235d114152257ed0a9030241a",
-                "price": "550"
+                "price": "950"
             },
             "w11": {
                 "name": "T-shirt ",
                 "img": "https://img.freepik.com/free-photo/pretty-young-stylish-sexy-woman-pink-luxury-dress-summer-fashion-trend-chic-style-sunglasses-blue-studio-background-shopping-holding-paper-bags-talking-mobile-phone-shopaholic_285396-2957.jpg?w=1380&t=st=1686143603~exp=1686144203~hmac=88de2477feb6b36a9bdad72e9d4c5c6bba0188550c6a3a64cfe9e0533990a311",
-                "price": "550"
+                "price": "500"
             },
             "w12": {
                 "name": "T-shirt ",
-                "img": "https://img.freepik.com/free-photo/pretty-young-stylish-sexy-woman-pink-luxury-dress-summer-fashion-trend-chic-style-sunglasses-blue-studio-background-shopping-holding-paper-bags-talking-mobile-phone-shopaholic_285396-2957.jpg?w=1380&t=st=1686143603~exp=1686144203~hmac=88de2477feb6b36a9bdad72e9d4c5c6bba0188550c6a3a64cfe9e0533990a311",
-                "price": "550"
+                "img": "https://images.unsplash.com/photo-1554568218-0f1715e72254?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+                "price": "490"
             },
             "w13": {
                 "name": "T-shirt ",
                 "img": "https://img.freepik.com/free-photo/pretty-young-stylish-sexy-woman-pink-luxury-dress-summer-fashion-trend-chic-style-sunglasses-blue-studio-background-shopping-holding-paper-bags-talking-mobile-phone-shopaholic_285396-2957.jpg?w=1380&t=st=1686143603~exp=1686144203~hmac=88de2477feb6b36a9bdad72e9d4c5c6bba0188550c6a3a64cfe9e0533990a311",
-                "price": "550"
+                "price": "370"
             },
             "w14": {
                 "name": "T-shirt ",
                 "img": "https://img.freepik.com/free-photo/pretty-young-stylish-sexy-woman-pink-luxury-dress-summer-fashion-trend-chic-style-sunglasses-blue-studio-background-shopping-holding-paper-bags-talking-mobile-phone-shopaholic_285396-2957.jpg?w=1380&t=st=1686143603~exp=1686144203~hmac=88de2477feb6b36a9bdad72e9d4c5c6bba0188550c6a3a64cfe9e0533990a311",
-                "price": "550"
+                "price": "599"
             },
             "w15": {
                 "name": "T-shirt ",
-                "img": "https://img.freepik.com/free-photo/pretty-young-stylish-sexy-woman-pink-luxury-dress-summer-fashion-trend-chic-style-sunglasses-blue-studio-background-shopping-holding-paper-bags-talking-mobile-phone-shopaholic_285396-2957.jpg?w=1380&t=st=1686143603~exp=1686144203~hmac=88de2477feb6b36a9bdad72e9d4c5c6bba0188550c6a3a64cfe9e0533990a311",
-                "price": "550"
+                "img": "https://images.unsplash.com/photo-1583744946564-b52ac1c389c8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+                "price": "610"
             }
         }
     }

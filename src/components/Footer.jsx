@@ -5,7 +5,7 @@ const Footer = () => {
     <footer class="footer-wrapper d-flex justify-content-center p-2">
       <div class="d-flex justify-content-center nav-wrapper">
         <nav>
-          <ul class="d-flex flex-column mb-0">
+          <ul class="d-flex flex-column ">
             <li class="nav-item">Main Menu</li>
             <li class="nav-item">Home</li>
             <li class="nav-item"> Our Services</li>
@@ -15,7 +15,7 @@ const Footer = () => {
           </ul>
         </nav>
         <nav>
-          <ul class="d-flex flex-column mb-0">
+          <ul class="d-flex flex-column ">
             <li class="nav-item">Company</li>
             <li class="nav-item">About </li>
             <li class="nav-item">Team</li>
@@ -24,7 +24,7 @@ const Footer = () => {
           </ul>
         </nav>
         <nav>
-          <ul class="d-flex flex-column mb-0">
+          <ul class="d-flex flex-column ">
             <li class="nav-item">Useful Links</li>
             <li class="nav-item">site map</li>
             <li class="nav-item">search </li>
