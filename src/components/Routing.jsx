@@ -6,6 +6,7 @@ import About from "./../pages/About";
 import Women from "./../pages/Women";
 import ContactUs from "./../pages/ContactUs";
 import Men from "../pages/men";
+import DetailPage from "../pages/DetailPage";
 
 const Routing = () => {
   return (
@@ -17,6 +18,7 @@ const Routing = () => {
         <Route path="/women" element={<Women />}></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/contact-us" element={<ContactUs />}></Route>
+        <Route path="/details/:id" element={<DetailPage />}></Route>
       </Route>
     </Routes>
   );

@@ -17,6 +17,7 @@ const useMenData = () => {
           name: shortData[id].name,
           img: shortData[id].img,
           price: shortData[id].price,
+          category: shortData[id].category,
         };
 
         responseData.push(item);

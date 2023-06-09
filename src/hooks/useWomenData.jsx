@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { getMenProducts, getWomenProducts } from "../services/apiservice";
+import { getWomenProducts } from "../services/apiservice";
 
 const useWomenData = () => {
   const [womenProducts, setWomenProducts] = useState([]);
@@ -17,6 +17,7 @@ const useWomenData = () => {
           name: shortData[id].name,
           img: shortData[id].img,
           price: shortData[id].price,
+          category: shortData[id].category,
         };
 
         responseData.push(item);
