@@ -3,22 +3,22 @@ import useMenData from "../hooks/useMenData";
 import Card from "../components/Card";
 import useWomenData from "../hooks/useWomenData";
 import { useNavigate } from "react-router-dom";
+import CarouselData from "../components/Carousel";
 
 const Home = () => {
-  const data = useMenData();
-  const [mendata, setMenData] = useState([]);
+  const menProducts = useMenData();
   const womenProducts = useWomenData();
-  const [womendata, setWomenData] = useState([]);
+  const [menData, setMenData] = useState([]);
+  const [womenData, setWomenData] = useState([]);
+  // const [products, setProducts] = useState({ men: [], women: [] });
   const navigate = useNavigate();
+  useEffect(() => {
+    setWomenData(womenProducts.slice(-5));
+  }, [womenProducts]);
 
   useEffect(() => {
-    setMenData(data);
-    setWomenData(womenProducts);
-  }, [data, womenProducts]);
-  // console.log(mendata);
-  const menLastFiveData = mendata.slice(-5);
-  const womenLastFiveData = womendata.slice(-5);
-  // const products = getproducts();
+    setMenData(menProducts.slice(-5));
+  }, [menProducts]);
 
   const menListHandler = () => {
     navigate("/men");
@@ -29,8 +29,9 @@ const Home = () => {
   };
 
   return (
-    <div className=" p-2 ">
-      <div className="main-wrapper ">
+    <>
+      <CarouselData />
+      <div className="main-wrapper p-2">
         <div className="d-flex justify-content-between align-items-center ">
           <span>For men</span>
           <span className="see-all-text" onClick={menListHandler}>
@@ -38,7 +39,7 @@ const Home = () => {
           </span>
         </div>
         <div className="row">
-          {menLastFiveData.map((res) => {
+          {menData.map((res) => {
             // console.log(res);
             return <Card key={res.id} cardData={res} />;
           })}
@@ -51,13 +52,13 @@ const Home = () => {
           </span>
         </div>
         <div className="row">
-          {womenLastFiveData.map((res) => {
+          {womenData.map((res) => {
             // console.log(res);
             return <Card key={res.id} cardData={res} />;
           })}
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

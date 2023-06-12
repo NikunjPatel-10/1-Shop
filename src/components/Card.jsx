@@ -1,18 +1,18 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
-// import context from "../context/Context";
+import context from "../context/Context";
 
 const Card = ({ cardData }) => {
   // console.log(cardData);
   //   console.log(props.cardData.name);
   const navigate = useNavigate();
   const { setCategory } = useContext(context);
-
   setCategory(cardData.category);
+  // console.log(category);
 
   const detailsHandler = () => {
-    navigate("/details/" + cardData.id + cardData.category);
+    navigate("/details/" + cardData.id);
   };
   return (
     <div

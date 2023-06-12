@@ -10,7 +10,8 @@
             "m2": {
                 "name": "T-shirt ",
                 "img": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80",
-                "price": "450"
+                "price": "450",
+                "category": "men"
             },
             "m3": {
                 "name": "polo-T-shirt ",
@@ -85,8 +86,8 @@
                 "category": "men"
             },
             "m15": {
-                "name": "black-T-shirt ",
-                "img": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+                "name": "T-shirt ",
+                "img": "https://img.freepik.com/free-photo/portrait-handsome-smiling-stylish-young-man_158538-19393.jpg?w=1380&t=st=1686563511~exp=1686564111~hmac=6b5b5cd08ef6839bd010034712e611159fd0ca91af5dd3f098181da30863aec50",
                 "price": "800",
                 "category": "men"
             }

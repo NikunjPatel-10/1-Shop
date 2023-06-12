@@ -6,7 +6,7 @@ const useWomenData = () => {
 
   useEffect(() => {
     getWomenProducts().then((response) => {
-      console.log(response);
+      // console.log(response);
       const responseData = [];
       for (const key in response.data) {
         const id = key;

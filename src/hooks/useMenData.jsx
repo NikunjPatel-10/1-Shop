@@ -6,7 +6,7 @@ const useMenData = () => {
 
   useEffect(() => {
     getMenProducts().then((response) => {
-      console.log(response);
+      // console.log(response);
       const responseData = [];
       for (const key in response.data) {
         const id = key;
@@ -22,7 +22,6 @@ const useMenData = () => {
 
         responseData.push(item);
       }
-      console.log(responseData[0]);
       setMenProducts(responseData);
     });
   }, []);

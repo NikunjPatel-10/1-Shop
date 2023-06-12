@@ -2,34 +2,34 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer class="footer-wrapper d-flex justify-content-center p-2">
-      <div class="d-flex justify-content-center nav-wrapper">
+    <footer className="footer-wrapper d-flex justify-content-center p-2">
+      <div className="d-flex justify-content-center nav-wrapper">
         <nav>
-          <ul class="d-flex flex-column ">
-            <li class="nav-item">Main Menu</li>
-            <li class="nav-item">Home</li>
-            <li class="nav-item"> Our Services</li>
-            <li class="nav-item">Our Products</li>
-            <li class="nav-item">About us</li>
-            <li class="nav-item">Contact us</li>
+          <ul className="d-flex flex-column ">
+            <li className="nav-item">Main Menu</li>
+            <li className="nav-item">Home</li>
+            <li className="nav-item"> Our Services</li>
+            <li className="nav-item">Our Products</li>
+            <li className="nav-item">About us</li>
+            <li className="nav-item">Contact us</li>
           </ul>
         </nav>
         <nav>
-          <ul class="d-flex flex-column ">
-            <li class="nav-item">Company</li>
-            <li class="nav-item">About </li>
-            <li class="nav-item">Team</li>
-            <li class="nav-item">Blog</li>
-            <li class="nav-item">Careers</li>
+          <ul className="d-flex flex-column ">
+            <li className="nav-item">Company</li>
+            <li className="nav-item">About </li>
+            <li className="nav-item">Team</li>
+            <li className="nav-item">Blog</li>
+            <li className="nav-item">Careers</li>
           </ul>
         </nav>
         <nav>
-          <ul class="d-flex flex-column ">
-            <li class="nav-item">Useful Links</li>
-            <li class="nav-item">site map</li>
-            <li class="nav-item">search </li>
-            <li class="nav-item">Advanced Search</li>
-            <li class="nav-item">Supplier</li>
+          <ul className="d-flex flex-column ">
+            <li className="nav-item">Useful Links</li>
+            <li className="nav-item">site map</li>
+            <li className="nav-item">search </li>
+            <li className="nav-item">Advanced Search</li>
+            <li className="nav-item">Supplier</li>
           </ul>
         </nav>
       </div>
