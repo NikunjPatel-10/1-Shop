@@ -25,7 +25,6 @@ const useWomenData = () => {
       setWomenProducts(responseData);
     });
   }, []);
-
   return womenProducts;
 };
 

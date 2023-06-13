@@ -12,6 +12,7 @@ const Card = ({ cardData }) => {
   // console.log(category);
 
   const detailsHandler = () => {
+    localStorage.setItem("category", cardData.category);
     navigate("/details/" + cardData.id);
   };
   return (

@@ -21,7 +21,7 @@ const CarouselData = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://img.freepik.com/free-photo/pretty-young-stylish-sexy-woman-pink-luxury-dress-summer-fashion-trend-chic-style-sunglasses-blue-studio-background-shopping-holding-paper-bags-talking-mobile-phone-shopaholic_285396-2957.jpg?w=1380&t=st=1686143603~exp=1686144203~hmac=88de2477feb6b36a9bdad72e9d4c5c6bba0188550c6a3a64cfe9e0533990a311"
+            src="https://img.freepik.com/free-photo/girl-yellow-wall-with-shopping-bags_1157-34348.jpg?w=1380&t=st=1686633040~exp=1686633640~hmac=452a9d50395338272474005e7706cf1600ba46ac67b4b3c6d049cfc8d951fd04"
             alt="Third slide"
             style={{ height: "500px" }}
           />
