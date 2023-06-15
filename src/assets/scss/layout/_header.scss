@@ -3,4 +3,17 @@
 */
 .header {
    background-color: #fe6568;
+
+   .cart-items {
+      top: -17%;
+      right: -15%;
+      background-color: blue;
+      border-radius: 50%;
+      height: 15px;
+      width: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 13px;
+   }
 }

@@ -26,7 +26,7 @@ const useMenData = () => {
         setMenProducts(responseData);
       })
       .catch((error) => {
-        console.log("error while fetching the men clothes");
+        console.log("error while fetching the men clothes", error);
       });
   }, []);
   return menProducts;

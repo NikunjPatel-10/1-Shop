@@ -1,0 +1,46 @@
+.cart-img-wrapper {
+    height: 25px;
+    width: 25px;
+    overflow: hidden;
+
+    img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+.cart-size {
+    width: 25%;
+    margin: auto;
+    // margin: 10px;
+}
+
+@media(max-width:1200px) {
+    .cart-size {
+        width: auto;
+    }
+}
+
+.add-btn {
+    border: none;
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding: 0 5px;
+
+    span {
+        display: inline-block;
+        width: 15px;
+    }
+}
+
+.remove-btn {
+    background-color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    padding: 0 5px;
+
+    span {
+        display: inline-block;
+        width: 15px;
+    }
+}
