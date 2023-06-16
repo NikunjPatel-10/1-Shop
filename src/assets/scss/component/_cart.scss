@@ -23,7 +23,7 @@
 
 .add-btn {
     border: none;
-    background-color: aliceblue;
+    background-color: rgb(145, 188, 226);
     border-radius: 5px;
     padding: 0 5px;
 
@@ -34,7 +34,7 @@
 }
 
 .remove-btn {
-    background-color: aliceblue;
+    background-color: rgb(145, 188, 226);
     border: none;
     border-radius: 5px;
     padding: 0 5px;
@@ -42,5 +42,13 @@
     span {
         display: inline-block;
         width: 15px;
+    }
+}
+
+.disabled {
+    background-color: rgba(207, 207, 207, 0.453);
+
+    span {
+        color: gray;
     }
 }

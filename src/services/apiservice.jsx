@@ -15,10 +15,18 @@ export const getProductsById = async (category, id) => {
 
 export const postCartProducts = async (data) => {
   return await axios.post(baseUrl + "cart.json", { ...data }).then((res) => {
-    console.log(res);
+    // console.log(res);
   });
 };
 
 export const getCartProducts = async () => {
   return await axios.get(baseUrl + "cart.json");
+};
+
+export const updateCartProducts = async (data, id) => {
+  return await axios
+    .put(baseUrl + "cart/" + id + ".json", { ...data })
+    .then((res) => {
+      console.log(res);
+    });
 };

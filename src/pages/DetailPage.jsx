@@ -9,7 +9,7 @@ const DetailPage = () => {
   console.log(id);
   // const { category } = useContext(context);
   // console.log(category);
-  const [detail, setDetail] = useState();
+  const [detail, setDetail] = useState({});
 
   useEffect(() => {
     if (path.pathname.includes("/details")) {
@@ -39,8 +39,12 @@ const DetailPage = () => {
   /**
    * to get the details of cart items
    */
+  const cartItem = detail;
+  cartItem.quantity = 1;
+  cartItem.totalPrice = cartItem.price;
+  // console.log(cartItem);
   const cartDataHandler = () => {
-    const cartdata = postCartProducts(detail);
+    postCartProducts(cartItem);
   };
 
   // console.log(data.data.img);

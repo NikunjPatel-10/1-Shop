@@ -16,6 +16,8 @@ const useCartData = () => {
             img: response.data[id].img,
             price: response.data[id].price,
             category: response.data[id].category,
+            quantity: response.data[id].quantity,
+            totalPrice: response.data[id].totalPrice,
           };
           responseData.push(cartItem);
         }

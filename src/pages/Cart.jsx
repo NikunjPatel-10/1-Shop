@@ -1,44 +1,43 @@
 import React, { useEffect, useState } from "react";
 import useCartData from "./../hooks/useCartData";
+import CartItem from "../components/CartItem";
 
 const Cart = () => {
+  const quantity = 1;
   const getCartData = useCartData();
   const [cartData, setCartData] = useState([]);
+  const [total , setTotal] = useState();
 
+  
   useEffect(() => {
     setCartData(getCartData);
-  }, [getCartData]);
+    // if(cartData){
+      console.log('hello');
+     
+    // }
+  }, [getCartData,cartData]);
   // console.log(cartData);
+  
+  const totalPriceHandler = (price)=>{
+    setTotal(cartData.reduce((total,item)=> total += +item.totalPrice,0 ))
+  }
+
+
+
   return (
     <div className="h-100   m-3 align-items-center ">
       <ul className=" cart-size  p-0">
         {cartData.map((data) => {
+          // console.log(data);
           return (
-            <li key={data.id} className="d-flex justify-content-between ">
-              <div className="d-flex ">
-                <figure className="cart-img-wrapper mb-0 d-flex justify-content-center align-items-center me-3">
-                  <img src={data.img} alt="no img found" />
-                </figure>
-                <p>{data.name}</p>
-              </div>
-              <div className="d-flex">
-                <p className="mx-2">₹ {data.price}</p>
-                <div>
-                  <button className="remove-btn ">
-                    <span>-</span>
-                  </button>
-                  <span className="mx-2">1</span>
-                  <button className="add-btn ">
-                    <span>+</span>
-                  </button>
-                </div>
-              </div>
-            </li>
+            <>
+              <CartItem key={data.id} cartData={...data}  onCartPrice = {totalPriceHandler}/>
+            </>
           );
         })}
         <li className="d-flex justify-content-between  border-top border-dark">
           <p>Total Amount</p>
-          <p>₹ 1000 </p>
+          <p>{total} </p>
         </li>
       </ul>
     </div>
