@@ -7,8 +7,8 @@ const Card = ({ cardData }) => {
   // console.log(cardData);
   //   console.log(props.cardData.name);
   const navigate = useNavigate();
-  const { setCategory } = useContext(context);
-  setCategory(cardData.category);
+  // const { setCategory } = useContext(context);
+  // setCategory(cardData.category);
   // console.log(category);
 
   const detailsHandler = () => {

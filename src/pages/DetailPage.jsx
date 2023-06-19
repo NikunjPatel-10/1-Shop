@@ -1,14 +1,13 @@
 import React, { useContext, useEffect, useState } from "react";
-import { json, useLocation, useParams } from "react-router-dom";
+import { json, useLocation, useNavigate, useParams } from "react-router-dom";
 import { getProductsById, postCartProducts } from "../services/apiservice";
-import context from "../context/Context";
 
 const DetailPage = () => {
   const path = useLocation();
   const { id } = useParams();
   console.log(id);
-  // const { category } = useContext(context);
-  // console.log(category);
+  // setCartItem(cartData.length)
+  const navigate = useNavigate();
   const [detail, setDetail] = useState({});
 
   useEffect(() => {
@@ -45,6 +44,8 @@ const DetailPage = () => {
   // console.log(cartItem);
   const cartDataHandler = () => {
     postCartProducts(cartItem);
+    // window.history.back();
+    navigate(-1);
   };
 
   // console.log(data.data.img);

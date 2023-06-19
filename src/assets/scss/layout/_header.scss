@@ -7,7 +7,7 @@
    .cart-items {
       top: -17%;
       right: -15%;
-      background-color: blue;
+      background-color: green;
       border-radius: 50%;
       height: 15px;
       width: 15px;
@@ -15,5 +15,10 @@
       justify-content: center;
       align-items: center;
       font-size: 13px;
+
+      &:hover {
+         color: white;
+      }
    }
+
 }

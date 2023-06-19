@@ -24,9 +24,9 @@ export const getCartProducts = async () => {
 };
 
 export const updateCartProducts = async (data, id) => {
-  return await axios
-    .put(baseUrl + "cart/" + id + ".json", { ...data })
-    .then((res) => {
-      console.log(res);
-    });
+  return await axios.put(baseUrl + "cart/" + id + ".json", { ...data });
+};
+
+export const deleteCartProduct = async (id) => {
+  return await axios.delete(baseUrl + "cart/" + id + ".json");
 };
