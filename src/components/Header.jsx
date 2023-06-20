@@ -1,16 +1,11 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { IconShoppingCart } from "@tabler/icons-react";
-import useCartData from "../hooks/useCartData";
+import Context from "../context/Context";
 
 const Header = () => {
-  const getCartData = useCartData();
-
-  const [cartItem, setCartItem] = useState([]);
-
-  useEffect(() => {
-    setCartItem(getCartData.length);
-  }, [getCartData]);
+  const { cartItems } = useContext(Context);
+  const quantity = cartItems.length
 
   return (
     <div className="d-flex header w-100">
@@ -44,7 +39,7 @@ const Header = () => {
           <Link className="nav-link" to={"./cart"}>
             <div className="position-relative">
               <IconShoppingCart />
-              <span className="position-absolute cart-items">{cartItem}</span>
+              <span className="position-absolute cart-items">{quantity}</span>
             </div>
           </Link>
         </li>

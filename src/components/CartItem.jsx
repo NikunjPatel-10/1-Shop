@@ -1,14 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { updateCartProducts } from "../services/apiservice";
 import useCartData from "./../hooks/useCartData";
+import { IconX } from "@tabler/icons-react";
 
-const CartItem = ({ cartData, updateTotalPrice }) => {
-  const getCartData = useCartData();
-  const [cartUpdate, setCartUpdate] = useState([]);
+const CartItem = ({ cartData, updateTotalPrice, onDeleteProduct }) => {
 
-  // useEffect(() => {
-  //   setCartUpdate(getCartData);
-  // }, getCartData);
+
   const { name, img, price, category, id, quantity, totalPrice } = cartData;
   const [cart, setCart] = useState({
     counter: quantity,
@@ -39,28 +36,37 @@ const CartItem = ({ cartData, updateTotalPrice }) => {
       updateTotalPrice(-price);
     }
   };
+
+  /**
+   * increase counter and 
+   */
   const addHandler = () => {
     const updatedCounter = cart.counter + 1;
     const updatedPrice = price * updatedCounter;
+
     updateCartProducts(
       { ...cartData, totalPrice: updatedPrice, quantity: updatedCounter },
       id
-    ).then((res) => {
-      if (res) {
-        cartUpdate;
-      }
-    });
+    );
 
-    // cartUpdate;
     setCart({
       counter: updatedCounter,
       Price: updatedPrice,
     });
     updateTotalPrice(price);
   };
+
+  /**for delete data
+   * send id to cart component
+   * @param {*} id
+   */
+  const deleteCartItemHandler = async (id) => {
+    onDeleteProduct(id);
+  };
+
   return (
     <>
-      <li className="d-flex justify-content-between cart-item p-2">
+      <li className="d-flex justify-content-between cart-item p-2 position-relative">
         <div className="d-flex ">
           <figure className="cart-img-wrapper mb-0 d-flex justify-content-center align-items-center me-3">
             <img src={img} alt="no img found" />
@@ -71,9 +77,8 @@ const CartItem = ({ cartData, updateTotalPrice }) => {
           <p className="px-3 mb-0">₹ {cart.Price}</p>
           <div>
             <button
-              className={`${
-                cart.counter < 2 ? "disabled" : ""
-              } ${"remove-btn"}`}
+              className={`${cart.counter < 2 ? "disabled" : ""
+                } ${"remove-btn"}`}
               onClick={() => removeHandler()}
             >
               <span>-</span>
@@ -83,6 +88,14 @@ const CartItem = ({ cartData, updateTotalPrice }) => {
               <span>+</span>
             </button>
           </div>
+        </div>
+        <div
+          className="close bg-dark bg-opacity-50  "
+          onClick={() => deleteCartItemHandler(id)}
+        >
+          <button className="border-0 bg-transparent ">
+            <IconX className="text-white" height={16} width={16} po />
+          </button>
         </div>
       </li>
     </>

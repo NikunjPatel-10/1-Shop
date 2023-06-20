@@ -1,12 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Context from "./Context";
 
 const ContextProvider = (props) => {
-  const [category, setCategory] = useState("");
+  const [cartItems, setCartItems] = useState("");
 
+  useEffect(() => {
+    console.log('context');
+
+  }, [cartItems])
   const contextValue = {
-    category,
-    setCategory,
+    cartItems,
+    setCartItems,
   };
 
   return (

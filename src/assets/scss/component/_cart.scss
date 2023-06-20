@@ -52,3 +52,25 @@
         color: gray;
     }
 }
+
+.close {
+    visibility: hidden;
+    position: absolute;
+    left: 0%;
+    top: -10%;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: 0.1s ease-in-out;
+}
+
+.cart-item:hover {
+    .close {
+        visibility: visible;
+        // position: fixed;
+        cursor: pointer;
+    }
+}

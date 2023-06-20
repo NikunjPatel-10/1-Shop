@@ -2,39 +2,53 @@ import React, { useContext, useEffect, useState } from "react";
 import useCartData from "./../hooks/useCartData";
 import CartItem from "../components/CartItem";
 import Context from "../context/Context";
+import { deleteCartProduct } from "../services/apiservice";
 
 const Cart = () => {
   const getCartData = useCartData();
   const [cartData, setCartData] = useState([]);
-  const [total , setTotal] = useState(0);
-  
+  const [total, setTotal] = useState(0);
 
-  
+  const { cartItems, setCartItems } = useContext(Context);
+
+  setCartItems(cartData);
+
   useEffect(() => {
     setCartData(getCartData);
-    }, [getCartData]);
+  }, [getCartData]);
 
-    useEffect(()=>{
-      totalAmountHandler()
-    },[cartData])
-    
-    const totalAmountHandler =  ()=>{
-      if(cartData){
-        setTotal( cartData.reduce((total,item)=> total += parseInt(item.totalPrice),0 ) )
-      }
-      
-      }
-    
-      const updateTotalPrice = (updatedPrice) => {
-        setTotal(total + parseInt(updatedPrice));
-      };
-    
+  useEffect(() => {
+    setCartItems(cartData.length);
+  }, [cartData, setCartItems]);
+
+
+  useEffect(() => {
+    totalAmountHandler()
+  }, [cartData])
+
+  const totalAmountHandler = () => {
+    if (cartData) {
+      setTotal(cartData.reduce((total, item) => total += parseInt(item.totalPrice), 0))
+    }
+  }
+
+  const updateTotalPrice = (updatedPrice) => {
+    setTotal(total + parseInt(updatedPrice));
+  };
+
+  const deleteProductHandler = async (deleteItemId) => {
+    if (deleteItemId) {
+      await deleteCartProduct(deleteItemId);
+      setCartData((prevData) => prevData.filter((item) => item.id !== deleteItemId))
+    }
+  }
+
   return (
     <div className="h-100   m-3 align-items-center ">
       <ul className=" cart-size  p-0">
         {cartData.map((data) => {
           return (
-              <CartItem key={data.id} cartData={...data}  updateTotalPrice={updateTotalPrice} />
+            <CartItem key={data.id} cartData={...data} updateTotalPrice={updateTotalPrice} onDeleteProduct={deleteProductHandler} />
           );
         })}
         <li className="d-flex justify-content-between  border-top border-dark px-2">

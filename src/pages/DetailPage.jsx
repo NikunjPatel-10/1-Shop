@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import { json, useLocation, useNavigate, useParams } from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 import { getProductsById, postCartProducts } from "../services/apiservice";
 
 const DetailPage = () => {
@@ -48,7 +48,6 @@ const DetailPage = () => {
     navigate(-1);
   };
 
-  // console.log(data.data.img);
 
   return (
     <div className="d-flex  flex-column align-items-center justify-content-center h-100">
@@ -60,8 +59,8 @@ const DetailPage = () => {
                 <img src={detail.img} alt="no img found" />
               </figure>
               <div className="w-100 d-flex flex-column justify-content-center align-items-center">
-                <p className="p-2"> Name : {detail.name}</p>
-                <p className="p-2"> Price : ₹ {detail.price}</p>
+                <p className="p-2 mb-0"> Name : {detail.name}</p>
+                <p className="p-2 mb-0"> Price : ₹ {detail.price}</p>
               </div>
             </>
           ) : (
