@@ -5,6 +5,9 @@ import Context from "../context/Context";
 
 const Header = () => {
   const { cartItems } = useContext(Context);
+  // const quantity = cartItems.length
+  // localStorage.setItem("quantity", cartItems);
+
   const quantity = cartItems.length
 
   return (

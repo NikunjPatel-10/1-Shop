@@ -1,14 +1,19 @@
 import React, { useContext, useEffect, useState } from "react";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
 import { getProductsById, postCartProducts } from "../services/apiservice";
+import useCartData from "../hooks/useCartData";
+import Context from "../context/Context";
 
 const DetailPage = () => {
+
   const path = useLocation();
   const { id } = useParams();
   console.log(id);
-  // setCartItem(cartData.length)
   const navigate = useNavigate();
   const [detail, setDetail] = useState({});
+
+  const { cartItems, setCartItems } = useContext(Context)
+
 
   useEffect(() => {
     if (path.pathname.includes("/details")) {
@@ -46,6 +51,8 @@ const DetailPage = () => {
     postCartProducts(cartItem);
     // window.history.back();
     navigate(-1);
+    setCartItems((prevItems) => [...prevItems, cartItem])
+    // console.log(cartItems);
   };
 
 

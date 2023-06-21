@@ -6,20 +6,24 @@ import { deleteCartProduct } from "../services/apiservice";
 
 const Cart = () => {
   const getCartData = useCartData();
-  const [cartData, setCartData] = useState([]);
+  // const [cartData, setCartData] = useState([]);
   const [total, setTotal] = useState(0);
 
-  const { cartItems, setCartItems } = useContext(Context);
+  const { setCartItems, cartItems } = useContext(Context);
+  // const cartData = cartItems
+  const [cartData, setCartData] = useState([cartItems])
+  console.log(cartData);
 
-  setCartItems(cartData);
+
 
   useEffect(() => {
-    setCartData(getCartData);
-  }, [getCartData]);
+    setCartData(cartItems);
+  }, [cartItems]);
 
   useEffect(() => {
-    setCartItems(cartData.length);
-  }, [cartData, setCartItems]);
+    setCartItems(getCartData)
+  }, [getCartData])
+
 
 
   useEffect(() => {
@@ -39,7 +43,7 @@ const Cart = () => {
   const deleteProductHandler = async (deleteItemId) => {
     if (deleteItemId) {
       await deleteCartProduct(deleteItemId);
-      setCartData((prevData) => prevData.filter((item) => item.id !== deleteItemId))
+      setCartItems((prevData) => prevData.filter((item) => item.id !== deleteItemId))
     }
   }
 

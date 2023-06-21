@@ -24,8 +24,8 @@ const CartItem = ({ cartData, updateTotalPrice, onDeleteProduct }) => {
         id
       ).then((res) => {
         if (res) {
-          getCartData;
-          console.log(getCartData);
+          // getCartData;
+          // console.log(getCartData);
         }
       });
 
@@ -94,7 +94,7 @@ const CartItem = ({ cartData, updateTotalPrice, onDeleteProduct }) => {
           onClick={() => deleteCartItemHandler(id)}
         >
           <button className="border-0 bg-transparent ">
-            <IconX className="text-white" height={16} width={16} po />
+            <IconX className="text-white" height={16} width={16} />
           </button>
         </div>
       </li>

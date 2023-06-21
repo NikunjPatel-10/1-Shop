@@ -2,12 +2,12 @@ import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import { Outlet } from "react-router";
-import ContextProvider from "../context/contextProvider";
+import ContextProvider from "./../context/ContextProvider";
 
 const Master = () => {
   return (
     <ContextProvider>
-      <div className="h-100  d-flex flex-column  overflow-auto">
+      <div className="h-100  d-flex flex-column  overflow-x-hidden overflow-y-auto">
         <div className="position-sticky top-0 z-2">
           <Header />
         </div>

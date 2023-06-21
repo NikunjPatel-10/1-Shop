@@ -2,12 +2,12 @@ import React, { useState, useEffect } from "react";
 import Context from "./Context";
 
 const ContextProvider = (props) => {
-  const [cartItems, setCartItems] = useState("");
+  const [cartItems, setCartItems] = useState([]);
 
-  useEffect(() => {
-    console.log('context');
+  // useEffect(() => {
+  //   console.log('context');
 
-  }, [cartItems])
+  // }, [cartItems])
   const contextValue = {
     cartItems,
     setCartItems,
