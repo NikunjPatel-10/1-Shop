@@ -23,9 +23,9 @@ const Card = ({ cardData }) => {
       <figure className="image-wrapper mb-0">
         <img src={cardData.img} className="card-img-top" alt="..." />
       </figure>
-      <div className=" w-100 ">
-        <h5 className="">{cardData.name}</h5>
-        <p className="">₹{cardData.price}</p>
+      <div className=" w-100 mt-2">
+        <h5 className="text-center">{cardData.name}</h5>
+        <p className="text-center mb-0">₹ {cardData.price}</p>
       </div>
     </div>
   );

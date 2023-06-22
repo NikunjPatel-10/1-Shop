@@ -9,10 +9,12 @@ import Men from "../pages/men";
 import DetailPage from "../pages/DetailPage";
 import Cart from "../pages/Cart";
 import PagenotFound from "../pages/PagenotFound";
+import Login from "../pages/Login";
 
 const Routing = () => {
   return (
     <Routes>
+      <Route path="/login" element={<Login />}></Route>
       <Route path="/" element={<Master />}>
         <Route path="/" element={<Navigate to={"/home"} />}></Route>
         <Route path="/home" element={<Home />}></Route>

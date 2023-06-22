@@ -1,22 +1,31 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import { Outlet } from "react-router";
-import ContextProvider from "./../context/ContextProvider";
+import useCartData from "../hooks/useCartData";
+import Context from "../context/Context";
 
 const Master = () => {
+  const getCartData = useCartData();
+
+  const { setCartItems, cartItems } = useContext(Context);
+
+  useEffect(() => {
+    setCartItems(getCartData)
+  }, [getCartData])
+
   return (
-    <ContextProvider>
-      <div className="h-100  d-flex flex-column  overflow-x-hidden overflow-y-auto">
-        <div className="position-sticky top-0 z-2">
-          <Header />
-        </div>
-        <div className="flex-grow-1">
-          <Outlet />
-        </div>
-        <Footer />
+
+    <div className="h-100  d-flex flex-column  overflow-x-hidden overflow-y-auto">
+      <div className="position-sticky top-0 z-2">
+        <Header />
       </div>
-    </ContextProvider>
+      <div className="flex-grow-1">
+        <Outlet />
+      </div>
+      <Footer />
+    </div>
+
   );
 };
 

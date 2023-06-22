@@ -15,6 +15,7 @@ const DetailPage = () => {
   const { cartItems, setCartItems } = useContext(Context)
 
 
+
   useEffect(() => {
     if (path.pathname.includes("/details")) {
       console.log();
