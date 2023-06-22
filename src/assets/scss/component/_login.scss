@@ -1,0 +1,53 @@
+.login-wrapper {
+    background-color: #fff;
+
+
+    .form-size {
+        width: 70%;
+    }
+
+    .form-control {
+        padding: 5px;
+        // border-radius: 4px;
+        width: 100%;
+        border: 1px solid #ccc;
+        // margin: 8px 0;
+        outline: none;
+    }
+
+
+
+    .password-wrapper {
+        display: flex;
+        border-radius: 20px;
+        width: 100%;
+        border: 1px solid #ccc;
+        margin: 8px 0;
+        outline: none;
+    }
+
+    .password-wrapper button {
+        border: none;
+        outline: none;
+        background-color: white;
+    }
+
+    .eye-icon-btn {
+        outline: none;
+    }
+
+    .login-btn {
+        background-color: #f78b73;
+    }
+}
+
+.login-img-wrapper {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+    img {
+        height: 100%;
+        width: 100%; // object-fit: cover;
+    }
+}
