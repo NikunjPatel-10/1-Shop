@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import GoogleMapReact from 'google-map-react';
 import {
   IconBrandInstagram,
   IconBrandFacebookFilled,
@@ -8,11 +9,21 @@ import {
   IconPhoneCall,
   IconMailFilled,
 } from "@tabler/icons-react";
+import Map from "../components/Map";
 
 const ContactUsPage = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+
+
+  const defaultProps = {
+    center: {
+      lat: 10.99835602,
+      lng: 77.01502627
+    },
+    zoom: 11
+  };
 
   const handleNameChange = (e) => {
     setName(e.target.value);
@@ -38,8 +49,19 @@ const ContactUsPage = () => {
 
   return (
     <div className="contact-us-wrapper">
-      <div>
+      <div style={{ height: '60vh', width: '100%' }} className="mt-3">
+        <GoogleMapReact
+          bootstrapURLKeys={{ key: "AIzaSyClKKb1cMAt1LmTuQKa8SZAr4k9JFg36IY" }}
+          defaultCenter={defaultProps.center}
+          defaultZoom={defaultProps.zoom}
 
+        >
+          <Map
+            lat={59.955413}
+            lng={30.337844}
+            text="My Marker"
+          />
+        </GoogleMapReact>
       </div>
       <div className="contact-us-container  row">
         <div className="col-12 col-sm-6 p-2">
@@ -80,8 +102,8 @@ const ContactUsPage = () => {
             </span>
           </div>
         </div>
-        <div className="col-12 col-sm-6">
-          <form className="contact-form  p-2" onSubmit={handleSubmit}>
+        <div className="col-12 col-sm-6 p-2">
+          <form className="contact-form border rounded p-2" onSubmit={handleSubmit}>
             <h2>Contact-Us </h2>
             <div className="form-group">
               <label htmlFor="name">Name:</label>
