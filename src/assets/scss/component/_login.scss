@@ -1,28 +1,39 @@
 .login-wrapper {
     background-color: #fff;
 
+    .logo-img-wrapper {
+        height: 250px;
+        width: 250px;
+        overflow: hidden;
+
+        img {
+            height: 100%;
+            width: auto;
+            object-fit: cover;
+        }
+    }
 
     .form-size {
         width: 70%;
     }
 
-    .form-control {
-        padding: 5px;
-        // border-radius: 4px;
-        width: 100%;
-        border: 1px solid #ccc;
-        // margin: 8px 0;
-        outline: none;
-    }
+    // .form-control {
+    //     // padding: 5px;
+    //     width: 100%;
+    //     border: 1px solid #ccc;
+    //     outline: none;
+    // }
 
 
 
     .password-wrapper {
         display: flex;
-        border-radius: 20px;
-        width: 100%;
-        border: 1px solid #ccc;
-        margin: 8px 0;
+        // border-radius: 20px;
+        // border: 1px solid #ccc;
+        outline: none;
+    }
+
+    .form-input {
         outline: none;
     }
 
@@ -39,15 +50,17 @@
     .login-btn {
         background-color: #f78b73;
     }
-}
 
-.login-img-wrapper {
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
 
-    img {
+
+    .login-img-wrapper {
         height: 100%;
-        width: 100%; // object-fit: cover;
+        width: 100%;
+        overflow: hidden;
+
+        img {
+            height: 100%;
+            width: 100%; // object-fit: cover;
+        }
     }
 }

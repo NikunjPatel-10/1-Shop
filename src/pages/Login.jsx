@@ -3,6 +3,7 @@ import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { Link } from 'react-router-dom';
 import loginImg from './../assets/images/login-img.png'
+import logo from './../assets/images/logo.png'
 import { IconEye, IconEyeOff } from '@tabler/icons-react';
 
 const Login = () => {
@@ -33,7 +34,13 @@ const Login = () => {
         <div className='login-wrapper h-100'>
             <div className='row h-100 '>
                 <div className='col-12 col-sm-6 gx-0'>
-                    <div className=" h-100 d-flex justify-content-center align-items-center">
+
+                    <div className=" h-100 d-flex  flex-column  align-items-center">
+                        <div>
+                            <figure className='logo-img-wrapper mb-0'>
+                                <img src={logo} />
+                            </figure>
+                        </div>
                         <Formik
                             initialValues={initialValues}
                             validationSchema={validationSchema}
@@ -43,13 +50,13 @@ const Login = () => {
                                 <div className="heading-text mb-4 px-3">
                                     <h3>Login page</h3>
                                 </div>
-                                <div className="mb-4">
+                                <div className="mb-4 ">
                                     {/* <label htmlFor="email" className='m-2'>Email</label> */}
                                     <Field
                                         type="email"
                                         id="email"
                                         name="email"
-                                        className="form-control form-input rounded-pill "
+                                        className="form-control  rounded-pill "
                                         placeholder="email Id"
                                     />
 
@@ -61,15 +68,15 @@ const Login = () => {
                                 </div>
                                 <div className="mb-4">
                                     {/* <label htmlFor="password" className='m-2'>Password</label> */}
-                                    <div className="password-wrapper">
+                                    <div className="password-wrapper form-control  rounded-pill">
                                         <Field
                                             type={showPassword ? "text" : "password"}
                                             id="password"
                                             name="password"
-                                            className="form-control form-input rounded-pill border-0"
+                                            className="form-input p-0 border-0"
                                             placeholder="password"
                                         />
-                                        <button type="button" className='border-0  me-3 bg-white eye-icon-btn' onClick={togglePasswordVisibility}>
+                                        <button type="button" className=' border-0   bg-white eye-icon-btn' onClick={togglePasswordVisibility}>
                                             {showPassword ? <IconEye className='text-secondary' /> : <IconEyeOff className='text-secondary' />}
                                         </button>
                                     </div>
@@ -79,7 +86,7 @@ const Login = () => {
                                         className="error-message"
                                     />
                                 </div>
-                                <div className="  my-4">
+                                <div className=" my-4">
                                     <button type="submit" className=' login-btn rounded-pill w-100 border-0 text-white p-2'>Submit</button>
                                 </div>
                                 <div className="detail-text my-2">
