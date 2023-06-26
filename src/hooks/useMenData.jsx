@@ -16,7 +16,7 @@ const useMenData = () => {
           const item = {
             id: id,
             name: shortData[id].name,
-            img: shortData[id].img,
+            img: shortData[id].img[0],
             price: shortData[id].price,
             category: shortData[id].category,
           };

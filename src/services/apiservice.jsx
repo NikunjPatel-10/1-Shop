@@ -10,7 +10,7 @@ export const getWomenProducts = async () => {
 };
 
 export const getProductsById = async (category, id) => {
-  return await axios.get(baseUrl + "product/" + `${category}/` + id + ".json");
+  return await axios.get(baseUrl + "product/" + `${category}/` + id + ".json")
 };
 
 export const postCartProducts = async (data) => {

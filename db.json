@@ -3,91 +3,165 @@
         "men": {
             "m1": {
                 "name": "Polo T-shirt ",
-                "img": ["https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80"],
+                "img": [
+                    "https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80",
+                    "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80",
+                    "https://images.unsplash.com/photo-1622470953794-aa9c70b0fb9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+                    "https://images.unsplash.com/photo-1618517351616-38fb9c5210c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                ],
                 "price": "250",
                 "category": "men"
             },
             "m2": {
                 "name": "T-shirt ",
-                "img": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80",
+                "img": [
+                    "https://images.unsplash.com/photo-1622470953794-aa9c70b0fb9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+                    "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80",
+                    "https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80",
+                    "https://images.unsplash.com/photo-1618517351616-38fb9c5210c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                ],
                 "price": "450",
                 "category": "men"
             },
             "m3": {
                 "name": "polo-T-shirt ",
-                "img": "https://images.unsplash.com/photo-1622470953794-aa9c70b0fb9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+                "img": [
+                    "https://images.unsplash.com/photo-1618517351616-38fb9c5210c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+                    "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80",
+                    "https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80",
+                    "https://images.unsplash.com/photo-1622470953794-aa9c70b0fb9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                ],
                 "price": "550",
                 "category": "men"
             },
             "m4": {
                 "name": "polo-T-shirt ",
-                "img": "https://images.unsplash.com/photo-1618517351616-38fb9c5210c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+                "img": [
+                    "https://images.unsplash.com/photo-1627225925683-1da7021732ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+                    "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80",
+                    "https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80",
+                    "https://images.unsplash.com/photo-1622470953794-aa9c70b0fb9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                ],
                 "price": "500",
                 "category": "men"
             },
             "m5": {
                 "name": "T-shirt ",
-                "img": "https://images.unsplash.com/photo-1627225925683-1da7021732ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+                "img": [
+                    "https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80",
+                    "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80",
+                    "https://images.unsplash.com/photo-1622470953794-aa9c70b0fb9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+                    "https://images.unsplash.com/photo-1618517351616-38fb9c5210c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                ],
                 "price": "650",
                 "category": "men"
             },
             "m6": {
                 "name": "T-shirt ",
-                "img": "https://images.unsplash.com/photo-1627225925683-1da7021732ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+                "img": [
+                    "https://images.unsplash.com/photo-1622470953794-aa9c70b0fb9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+                    "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80",
+                    "https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80",
+                    "https://images.unsplash.com/photo-1618517351616-38fb9c5210c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                ],
                 "price": "700",
                 "category": "men"
             },
             "m7": {
                 "name": "T-shirt ",
-                "img": "https://images.unsplash.com/photo-1627225925683-1da7021732ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
-                "price": "850",
+                "img": [
+                    "https://images.unsplash.com/photo-1618517351616-38fb9c5210c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+                    "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80",
+                    "https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80",
+                    "https://images.unsplash.com/photo-1622470953794-aa9c70b0fb9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                ],
+                "price": "720",
                 "category": "men"
             },
             "m8": {
                 "name": "T-shirt ",
-                "img": "https://images.unsplash.com/photo-1627225925683-1da7021732ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+                "img": ["https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80",
+                    "https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80",
+                    "https://images.unsplash.com/photo-1622470953794-aa9c70b0fb9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+                    "https://images.unsplash.com/photo-1618517351616-38fb9c5210c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                ],
                 "price": "700",
                 "category": "men"
             },
             "m9": {
                 "name": "T-shirt ",
-                "img": "https://images.unsplash.com/photo-1627225925683-1da7021732ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+                "img": [
+                    "https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80",
+                    "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80",
+                    "https://images.unsplash.com/photo-1622470953794-aa9c70b0fb9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+                    "https://images.unsplash.com/photo-1618517351616-38fb9c5210c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                ],
                 "price": "810",
                 "category": "men"
             },
             "m10": {
                 "name": "T-shirt ",
-                "img": "https://images.unsplash.com/photo-1627225925683-1da7021732ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+                "img": [
+                    "https://images.unsplash.com/photo-1622470953794-aa9c70b0fb9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+                    "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80",
+                    "https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80",
+                    "https://images.unsplash.com/photo-1618517351616-38fb9c5210c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                ],
                 "price": "610",
                 "category": "men"
             },
             "m11": {
                 "name": "polo-T-shirt ",
-                "img": "https://images.unsplash.com/photo-1622470953794-aa9c70b0fb9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+                "img": [
+                    "https://images.unsplash.com/photo-1618517351616-38fb9c5210c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+                    "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80",
+                    "https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80",
+                    "https://images.unsplash.com/photo-1622470953794-aa9c70b0fb9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                ],
                 "price": "900",
                 "category": "men"
             },
             "m12": {
                 "name": "polo-T-shirt ",
-                "img": "https://images.unsplash.com/photo-1571945153237-4929e783af4a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+                "img": [
+                    "https://images.unsplash.com/photo-1622470953794-aa9c70b0fb9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+                    "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80",
+                    "https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80",
+                    "https://images.unsplash.com/photo-1618517351616-38fb9c5210c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                ],
                 "price": "700",
                 "category": "men"
             },
             "m13": {
                 "name": "polo-T-shirt ",
-                "img": "https://images.unsplash.com/photo-1622470953794-aa9c70b0fb9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+                "img": [
+                    "https://images.unsplash.com/photo-1622470953794-aa9c70b0fb9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+                    "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80",
+                    "https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80",
+                    "https://images.unsplash.com/photo-1618517351616-38fb9c5210c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                ],
                 "price": "600",
                 "category": "men"
             },
             "m14": {
                 "name": "polo-T-shirt ",
-                "img": "https://images.unsplash.com/photo-1622470953794-aa9c70b0fb9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+                "img": [
+                    "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80",
+                    "https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80",
+                    "https://images.unsplash.com/photo-1622470953794-aa9c70b0fb9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+                    "https://images.unsplash.com/photo-1618517351616-38fb9c5210c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                ],
                 "price": "750",
                 "category": "men"
             },
             "m15": {
                 "name": "T-shirt ",
-                "img": "https://img.freepik.com/free-photo/portrait-handsome-smiling-stylish-young-man_158538-19393.jpg?w=1380&t=st=1686563511~exp=1686564111~hmac=6b5b5cd08ef6839bd010034712e611159fd0ca91af5dd3f098181da30863aec50",
+                "img": [
+                    "https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80",
+                    "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80",
+                    "https://images.unsplash.com/photo-1622470953794-aa9c70b0fb9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+                    "https://images.unsplash.com/photo-1618517351616-38fb9c5210c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                ],
                 "price": "800",
                 "category": "men"
             }
@@ -95,90 +169,165 @@
         "women": {
             "w1": {
                 "name": "Anouk ",
-                "img": "https://img.freepik.com/free-photo/blonde-girl-black-sweater-denim-skirt-winter-apparel-shoot_53876-102291.jpg?w=740&t=st=1686145649~exp=1686146249~hmac=17faac5db1e8165463494b7a7badc272dc19469384eaa8fc878fe44f647b2469",
+                "img": [
+                    "https://img.freepik.com/free-photo/blonde-girl-black-sweater-denim-skirt-winter-apparel-shoot_53876-102291.jpg?w=740&t=st=1686145649~exp=1686146249~hmac=17faac5db1e8165463494b7a7badc272dc19469384eaa8fc878fe44f647b2469",
+                    "https://img.freepik.com/free-photo/pretty-young-stylish-sexy-woman-pink-luxury-dress-summer-fashion-trend-chic-style-sunglasses-blue-studio-background-shopping-holding-paper-bags-talking-mobile-phone-shopaholic_285396-2957.jpg?w=1380&t=st=1686143603~exp=1686144203~hmac=88de2477feb6b36a9bdad72e9d4c5c6bba0188550c6a3a64cfe9e0533990a311",
+                    "https://as2.ftcdn.net/v2/jpg/03/33/80/89/1000_F_333808972_qFA3Rjgk56Xo4N80kI1IvaeSCtdLeQcK.jpg",
+                    "https://img.freepik.com/free-photo/stylish-woman-summer-outfit-isolated-posing-fashion-trend-isolated_285396-478.jpg?w=1380&t=st=1686143715~exp=1686144315~hmac=f4c2be4ca7d9ca67443cc31393c7624bf50a3e94469230477a627ffa87aabf1a"
+                ],
                 "price": "550",
                 "category": "women"
             },
             "w2": {
                 "name": "T-shirt ",
-                "img": "https://img.freepik.com/free-photo/pretty-young-stylish-sexy-woman-pink-luxury-dress-summer-fashion-trend-chic-style-sunglasses-blue-studio-background-shopping-holding-paper-bags-talking-mobile-phone-shopaholic_285396-2957.jpg?w=1380&t=st=1686143603~exp=1686144203~hmac=88de2477feb6b36a9bdad72e9d4c5c6bba0188550c6a3a64cfe9e0533990a311",
+                "img": [
+                    "https://img.freepik.com/free-photo/pretty-young-stylish-sexy-woman-pink-luxury-dress-summer-fashion-trend-chic-style-sunglasses-blue-studio-background-shopping-holding-paper-bags-talking-mobile-phone-shopaholic_285396-2957.jpg?w=1380&t=st=1686143603~exp=1686144203~hmac=88de2477feb6b36a9bdad72e9d4c5c6bba0188550c6a3a64cfe9e0533990a311",
+                    "https://img.freepik.com/free-photo/blonde-girl-black-sweater-denim-skirt-winter-apparel-shoot_53876-102291.jpg?w=740&t=st=1686145649~exp=1686146249~hmac=17faac5db1e8165463494b7a7badc272dc19469384eaa8fc878fe44f647b2469",
+                    "https://as2.ftcdn.net/v2/jpg/03/33/80/89/1000_F_333808972_qFA3Rjgk56Xo4N80kI1IvaeSCtdLeQcK.jpg",
+                    "https://img.freepik.com/free-photo/stylish-woman-summer-outfit-isolated-posing-fashion-trend-isolated_285396-478.jpg?w=1380&t=st=1686143715~exp=1686144315~hmac=f4c2be4ca7d9ca67443cc31393c7624bf50a3e94469230477a627ffa87aabf1a"
+                ],
                 "price": "650",
                 "category": "women"
             },
             "w3": {
                 "name": "T-shirt ",
-                "img": "https://as2.ftcdn.net/v2/jpg/03/33/80/89/1000_F_333808972_qFA3Rjgk56Xo4N80kI1IvaeSCtdLeQcK.jpg",
+                "img": [
+                    "https://as2.ftcdn.net/v2/jpg/03/33/80/89/1000_F_333808972_qFA3Rjgk56Xo4N80kI1IvaeSCtdLeQcK.jpg",
+                    "https://img.freepik.com/free-photo/blonde-girl-black-sweater-denim-skirt-winter-apparel-shoot_53876-102291.jpg?w=740&t=st=1686145649~exp=1686146249~hmac=17faac5db1e8165463494b7a7badc272dc19469384eaa8fc878fe44f647b2469",
+                    "https://img.freepik.com/free-photo/pretty-young-stylish-sexy-woman-pink-luxury-dress-summer-fashion-trend-chic-style-sunglasses-blue-studio-background-shopping-holding-paper-bags-talking-mobile-phone-shopaholic_285396-2957.jpg?w=1380&t=st=1686143603~exp=1686144203~hmac=88de2477feb6b36a9bdad72e9d4c5c6bba0188550c6a3a64cfe9e0533990a311",
+                    "https://img.freepik.com/free-photo/stylish-woman-summer-outfit-isolated-posing-fashion-trend-isolated_285396-478.jpg?w=1380&t=st=1686143715~exp=1686144315~hmac=f4c2be4ca7d9ca67443cc31393c7624bf50a3e94469230477a627ffa87aabf1a"
+                ],
                 "price": "750",
                 "category": "women"
             },
             "w4": {
                 "name": "T-shirt ",
-                "img": "https://img.freepik.com/free-photo/stylish-woman-summer-outfit-isolated-posing-fashion-trend-isolated_285396-478.jpg?w=1380&t=st=1686143715~exp=1686144315~hmac=f4c2be4ca7d9ca67443cc31393c7624bf50a3e94469230477a627ffa87aabf1a",
+                "img": [
+                    "https://img.freepik.com/free-photo/stylish-woman-summer-outfit-isolated-posing-fashion-trend-isolated_285396-478.jpg?w=1380&t=st=1686143715~exp=1686144315~hmac=f4c2be4ca7d9ca67443cc31393c7624bf50a3e94469230477a627ffa87aabf1a",
+                    "https://img.freepik.com/free-photo/blonde-girl-black-sweater-denim-skirt-winter-apparel-shoot_53876-102291.jpg?w=740&t=st=1686145649~exp=1686146249~hmac=17faac5db1e8165463494b7a7badc272dc19469384eaa8fc878fe44f647b2469",
+                    "https://img.freepik.com/free-photo/pretty-young-stylish-sexy-woman-pink-luxury-dress-summer-fashion-trend-chic-style-sunglasses-blue-studio-background-shopping-holding-paper-bags-talking-mobile-phone-shopaholic_285396-2957.jpg?w=1380&t=st=1686143603~exp=1686144203~hmac=88de2477feb6b36a9bdad72e9d4c5c6bba0188550c6a3a64cfe9e0533990a311",
+                    "https://as2.ftcdn.net/v2/jpg/03/33/80/89/1000_F_333808972_qFA3Rjgk56Xo4N80kI1IvaeSCtdLeQcK.jpg"
+                ],
                 "price": "850",
                 "category": "women"
             },
             "w5": {
                 "name": "T-shirt ",
-                "img": "https://img.freepik.com/free-photo/young-teen-woman-sunglasses-hat-holding-shopping-bags-her-hands-feeling-so-happiness-isolated-green-wall_231208-2681.jpg?w=1380&t=st=1686143747~exp=1686144347~hmac=62920abeafcc7ad416865564514ce5702ddaf9d235d114152257ed0a9030241a",
+                "img": [
+                    "https://img.freepik.com/free-photo/young-teen-woman-sunglasses-hat-holding-shopping-bags-her-hands-feeling-so-happiness-isolated-green-wall_231208-2681.jpg?w=1380&t=st=1686143747~exp=1686144347~hmac=62920abeafcc7ad416865564514ce5702ddaf9d235d114152257ed0a9030241a",
+                    "https://img.freepik.com/free-photo/blonde-girl-black-sweater-denim-skirt-winter-apparel-shoot_53876-102291.jpg?w=740&t=st=1686145649~exp=1686146249~hmac=17faac5db1e8165463494b7a7badc272dc19469384eaa8fc878fe44f647b2469",
+                    "https://img.freepik.com/free-photo/pretty-young-stylish-sexy-woman-pink-luxury-dress-summer-fashion-trend-chic-style-sunglasses-blue-studio-background-shopping-holding-paper-bags-talking-mobile-phone-shopaholic_285396-2957.jpg?w=1380&t=st=1686143603~exp=1686144203~hmac=88de2477feb6b36a9bdad72e9d4c5c6bba0188550c6a3a64cfe9e0533990a311",
+                    "https://img.freepik.com/free-photo/stylish-woman-summer-outfit-isolated-posing-fashion-trend-isolated_285396-478.jpg?w=1380&t=st=1686143715~exp=1686144315~hmac=f4c2be4ca7d9ca67443cc31393c7624bf50a3e94469230477a627ffa87aabf1a"
+                ],
                 "price": "450",
                 "category": "women"
             },
             "w6": {
                 "name": "T-shirt ",
-                "img": "https://img.freepik.com/free-photo/young-teen-woman-sunglasses-hat-holding-shopping-bags-her-hands-feeling-so-happiness-isolated-green-wall_231208-2681.jpg?w=1380&t=st=1686143747~exp=1686144347~hmac=62920abeafcc7ad416865564514ce5702ddaf9d235d114152257ed0a9030241a",
+                "img": ["https://img.freepik.com/free-photo/blonde-girl-black-sweater-denim-skirt-winter-apparel-shoot_53876-102291.jpg?w=740&t=st=1686145649~exp=1686146249~hmac=17faac5db1e8165463494b7a7badc272dc19469384eaa8fc878fe44f647b2469",
+                    "https://img.freepik.com/free-photo/pretty-young-stylish-sexy-woman-pink-luxury-dress-summer-fashion-trend-chic-style-sunglasses-blue-studio-background-shopping-holding-paper-bags-talking-mobile-phone-shopaholic_285396-2957.jpg?w=1380&t=st=1686143603~exp=1686144203~hmac=88de2477feb6b36a9bdad72e9d4c5c6bba0188550c6a3a64cfe9e0533990a311",
+                    "https://as2.ftcdn.net/v2/jpg/03/33/80/89/1000_F_333808972_qFA3Rjgk56Xo4N80kI1IvaeSCtdLeQcK.jpg",
+                    "https://img.freepik.com/free-photo/stylish-woman-summer-outfit-isolated-posing-fashion-trend-isolated_285396-478.jpg?w=1380&t=st=1686143715~exp=1686144315~hmac=f4c2be4ca7d9ca67443cc31393c7624bf50a3e94469230477a627ffa87aabf1a",
+                    "https://img.freepik.com/free-photo/young-teen-woman-sunglasses-hat-holding-shopping-bags-her-hands-feeling-so-happiness-isolated-green-wall_231208-2681.jpg?w=1380&t=st=1686143747~exp=1686144347~hmac=62920abeafcc7ad416865564514ce5702ddaf9d235d114152257ed0a9030241a"
+                ],
                 "price": "550",
                 "category": "women"
             },
             "w7": {
                 "name": "T-shirt ",
-                "img": "https://img.freepik.com/free-photo/young-teen-woman-sunglasses-hat-holding-shopping-bags-her-hands-feeling-so-happiness-isolated-green-wall_231208-2681.jpg?w=1380&t=st=1686143747~exp=1686144347~hmac=62920abeafcc7ad416865564514ce5702ddaf9d235d114152257ed0a9030241a",
+                "img": [
+                    "https://img.freepik.com/free-photo/pretty-young-stylish-sexy-woman-pink-luxury-dress-summer-fashion-trend-chic-style-sunglasses-blue-studio-background-shopping-holding-paper-bags-talking-mobile-phone-shopaholic_285396-2957.jpg?w=1380&t=st=1686143603~exp=1686144203~hmac=88de2477feb6b36a9bdad72e9d4c5c6bba0188550c6a3a64cfe9e0533990a311",
+                    "https://img.freepik.com/free-photo/blonde-girl-black-sweater-denim-skirt-winter-apparel-shoot_53876-102291.jpg?w=740&t=st=1686145649~exp=1686146249~hmac=17faac5db1e8165463494b7a7badc272dc19469384eaa8fc878fe44f647b2469",
+                    "https://as2.ftcdn.net/v2/jpg/03/33/80/89/1000_F_333808972_qFA3Rjgk56Xo4N80kI1IvaeSCtdLeQcK.jpg",
+                    "https://img.freepik.com/free-photo/stylish-woman-summer-outfit-isolated-posing-fashion-trend-isolated_285396-478.jpg?w=1380&t=st=1686143715~exp=1686144315~hmac=f4c2be4ca7d9ca67443cc31393c7624bf50a3e94469230477a627ffa87aabf1a"
+                ],
                 "price": "400",
                 "category": "women"
             },
             "w8": {
                 "name": "T-shirt ",
-                "img": "https://img.freepik.com/free-photo/young-teen-woman-sunglasses-hat-holding-shopping-bags-her-hands-feeling-so-happiness-isolated-green-wall_231208-2681.jpg?w=1380&t=st=1686143747~exp=1686144347~hmac=62920abeafcc7ad416865564514ce5702ddaf9d235d114152257ed0a9030241a",
+                "img": [
+                    "https://as2.ftcdn.net/v2/jpg/03/33/80/89/1000_F_333808972_qFA3Rjgk56Xo4N80kI1IvaeSCtdLeQcK.jpg",
+                    "https://img.freepik.com/free-photo/blonde-girl-black-sweater-denim-skirt-winter-apparel-shoot_53876-102291.jpg?w=740&t=st=1686145649~exp=1686146249~hmac=17faac5db1e8165463494b7a7badc272dc19469384eaa8fc878fe44f647b2469",
+                    "https://img.freepik.com/free-photo/pretty-young-stylish-sexy-woman-pink-luxury-dress-summer-fashion-trend-chic-style-sunglasses-blue-studio-background-shopping-holding-paper-bags-talking-mobile-phone-shopaholic_285396-2957.jpg?w=1380&t=st=1686143603~exp=1686144203~hmac=88de2477feb6b36a9bdad72e9d4c5c6bba0188550c6a3a64cfe9e0533990a311",
+                    "https://img.freepik.com/free-photo/stylish-woman-summer-outfit-isolated-posing-fashion-trend-isolated_285396-478.jpg?w=1380&t=st=1686143715~exp=1686144315~hmac=f4c2be4ca7d9ca67443cc31393c7624bf50a3e94469230477a627ffa87aabf1a"
+                ],
                 "price": "350",
                 "category": "women"
             },
             "w9": {
                 "name": "T-shirt ",
-                "img": "https://img.freepik.com/free-photo/young-teen-woman-sunglasses-hat-holding-shopping-bags-her-hands-feeling-so-happiness-isolated-green-wall_231208-2681.jpg?w=1380&t=st=1686143747~exp=1686144347~hmac=62920abeafcc7ad416865564514ce5702ddaf9d235d114152257ed0a9030241a",
+                "img": [
+                    "https://img.freepik.com/free-photo/stylish-woman-summer-outfit-isolated-posing-fashion-trend-isolated_285396-478.jpg?w=1380&t=st=1686143715~exp=1686144315~hmac=f4c2be4ca7d9ca67443cc31393c7624bf50a3e94469230477a627ffa87aabf1a",
+                    "https://img.freepik.com/free-photo/blonde-girl-black-sweater-denim-skirt-winter-apparel-shoot_53876-102291.jpg?w=740&t=st=1686145649~exp=1686146249~hmac=17faac5db1e8165463494b7a7badc272dc19469384eaa8fc878fe44f647b2469",
+                    "https://img.freepik.com/free-photo/pretty-young-stylish-sexy-woman-pink-luxury-dress-summer-fashion-trend-chic-style-sunglasses-blue-studio-background-shopping-holding-paper-bags-talking-mobile-phone-shopaholic_285396-2957.jpg?w=1380&t=st=1686143603~exp=1686144203~hmac=88de2477feb6b36a9bdad72e9d4c5c6bba0188550c6a3a64cfe9e0533990a311",
+                    "https://as2.ftcdn.net/v2/jpg/03/33/80/89/1000_F_333808972_qFA3Rjgk56Xo4N80kI1IvaeSCtdLeQcK.jpg"
+                ],
                 "price": "250",
                 "category": "women"
             },
             "w10": {
                 "name": "T-shirt ",
-                "img": "https://img.freepik.com/free-photo/young-teen-woman-sunglasses-hat-holding-shopping-bags-her-hands-feeling-so-happiness-isolated-green-wall_231208-2681.jpg?w=1380&t=st=1686143747~exp=1686144347~hmac=62920abeafcc7ad416865564514ce5702ddaf9d235d114152257ed0a9030241a",
+                "img": [
+                    "https://img.freepik.com/free-photo/young-teen-woman-sunglasses-hat-holding-shopping-bags-her-hands-feeling-so-happiness-isolated-green-wall_231208-2681.jpg?w=1380&t=st=1686143747~exp=1686144347~hmac=62920abeafcc7ad416865564514ce5702ddaf9d235d114152257ed0a9030241a",
+                    "https://img.freepik.com/free-photo/blonde-girl-black-sweater-denim-skirt-winter-apparel-shoot_53876-102291.jpg?w=740&t=st=1686145649~exp=1686146249~hmac=17faac5db1e8165463494b7a7badc272dc19469384eaa8fc878fe44f647b2469",
+                    "https://img.freepik.com/free-photo/pretty-young-stylish-sexy-woman-pink-luxury-dress-summer-fashion-trend-chic-style-sunglasses-blue-studio-background-shopping-holding-paper-bags-talking-mobile-phone-shopaholic_285396-2957.jpg?w=1380&t=st=1686143603~exp=1686144203~hmac=88de2477feb6b36a9bdad72e9d4c5c6bba0188550c6a3a64cfe9e0533990a311",
+                    "https://as2.ftcdn.net/v2/jpg/03/33/80/89/1000_F_333808972_qFA3Rjgk56Xo4N80kI1IvaeSCtdLeQcK.jpg"
+                ],
                 "price": "950"
             },
             "w11": {
                 "name": "T-shirt ",
-                "img": "https://img.freepik.com/free-photo/pretty-young-stylish-sexy-woman-pink-luxury-dress-summer-fashion-trend-chic-style-sunglasses-blue-studio-background-shopping-holding-paper-bags-talking-mobile-phone-shopaholic_285396-2957.jpg?w=1380&t=st=1686143603~exp=1686144203~hmac=88de2477feb6b36a9bdad72e9d4c5c6bba0188550c6a3a64cfe9e0533990a311",
+                "img": [
+                    "https://img.freepik.com/free-photo/blonde-girl-black-sweater-denim-skirt-winter-apparel-shoot_53876-102291.jpg?w=740&t=st=1686145649~exp=1686146249~hmac=17faac5db1e8165463494b7a7badc272dc19469384eaa8fc878fe44f647b2469",
+                    "https://img.freepik.com/free-photo/pretty-young-stylish-sexy-woman-pink-luxury-dress-summer-fashion-trend-chic-style-sunglasses-blue-studio-background-shopping-holding-paper-bags-talking-mobile-phone-shopaholic_285396-2957.jpg?w=1380&t=st=1686143603~exp=1686144203~hmac=88de2477feb6b36a9bdad72e9d4c5c6bba0188550c6a3a64cfe9e0533990a311",
+                    "https://as2.ftcdn.net/v2/jpg/03/33/80/89/1000_F_333808972_qFA3Rjgk56Xo4N80kI1IvaeSCtdLeQcK.jpg",
+                    "https://img.freepik.com/free-photo/stylish-woman-summer-outfit-isolated-posing-fashion-trend-isolated_285396-478.jpg?w=1380&t=st=1686143715~exp=1686144315~hmac=f4c2be4ca7d9ca67443cc31393c7624bf50a3e94469230477a627ffa87aabf1a"
+                ],
                 "price": "500",
                 "category": "women"
             },
             "w12": {
                 "name": "T-shirt ",
-                "img": "https://images.unsplash.com/photo-1554568218-0f1715e72254?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+                "img": [
+                    "https://img.freepik.com/free-photo/pretty-young-stylish-sexy-woman-pink-luxury-dress-summer-fashion-trend-chic-style-sunglasses-blue-studio-background-shopping-holding-paper-bags-talking-mobile-phone-shopaholic_285396-2957.jpg?w=1380&t=st=1686143603~exp=1686144203~hmac=88de2477feb6b36a9bdad72e9d4c5c6bba0188550c6a3a64cfe9e0533990a311",
+                    "https://img.freepik.com/free-photo/blonde-girl-black-sweater-denim-skirt-winter-apparel-shoot_53876-102291.jpg?w=740&t=st=1686145649~exp=1686146249~hmac=17faac5db1e8165463494b7a7badc272dc19469384eaa8fc878fe44f647b2469",
+                    "https://as2.ftcdn.net/v2/jpg/03/33/80/89/1000_F_333808972_qFA3Rjgk56Xo4N80kI1IvaeSCtdLeQcK.jpg",
+                    "https://img.freepik.com/free-photo/stylish-woman-summer-outfit-isolated-posing-fashion-trend-isolated_285396-478.jpg?w=1380&t=st=1686143715~exp=1686144315~hmac=f4c2be4ca7d9ca67443cc31393c7624bf50a3e94469230477a627ffa87aabf1a"
+                ],
                 "price": "490",
                 "category": "women"
             },
             "w13": {
                 "name": "T-shirt ",
-                "img": "https://img.freepik.com/free-photo/pretty-young-stylish-sexy-woman-pink-luxury-dress-summer-fashion-trend-chic-style-sunglasses-blue-studio-background-shopping-holding-paper-bags-talking-mobile-phone-shopaholic_285396-2957.jpg?w=1380&t=st=1686143603~exp=1686144203~hmac=88de2477feb6b36a9bdad72e9d4c5c6bba0188550c6a3a64cfe9e0533990a311",
+                "img": [
+                    "https://img.freepik.com/free-photo/pretty-young-stylish-sexy-woman-pink-luxury-dress-summer-fashion-trend-chic-style-sunglasses-blue-studio-background-shopping-holding-paper-bags-talking-mobile-phone-shopaholic_285396-2957.jpg?w=1380&t=st=1686143603~exp=1686144203~hmac=88de2477feb6b36a9bdad72e9d4c5c6bba0188550c6a3a64cfe9e0533990a311",
+                    "https://img.freepik.com/free-photo/blonde-girl-black-sweater-denim-skirt-winter-apparel-shoot_53876-102291.jpg?w=740&t=st=1686145649~exp=1686146249~hmac=17faac5db1e8165463494b7a7badc272dc19469384eaa8fc878fe44f647b2469",
+                    "https://as2.ftcdn.net/v2/jpg/03/33/80/89/1000_F_333808972_qFA3Rjgk56Xo4N80kI1IvaeSCtdLeQcK.jpg",
+                    "https://img.freepik.com/free-photo/stylish-woman-summer-outfit-isolated-posing-fashion-trend-isolated_285396-478.jpg?w=1380&t=st=1686143715~exp=1686144315~hmac=f4c2be4ca7d9ca67443cc31393c7624bf50a3e94469230477a627ffa87aabf1a"
+                ],
                 "price": "370",
                 "category": "women"
             },
             "w14": {
                 "name": "T-shirt ",
-                "img": "https://img.freepik.com/free-photo/pretty-young-stylish-sexy-woman-pink-luxury-dress-summer-fashion-trend-chic-style-sunglasses-blue-studio-background-shopping-holding-paper-bags-talking-mobile-phone-shopaholic_285396-2957.jpg?w=1380&t=st=1686143603~exp=1686144203~hmac=88de2477feb6b36a9bdad72e9d4c5c6bba0188550c6a3a64cfe9e0533990a311",
+                "img": [
+                    "https://img.freepik.com/free-photo/stylish-woman-summer-outfit-isolated-posing-fashion-trend-isolated_285396-478.jpg?w=1380&t=st=1686143715~exp=1686144315~hmac=f4c2be4ca7d9ca67443cc31393c7624bf50a3e94469230477a627ffa87aabf1a",
+                    "https://img.freepik.com/free-photo/blonde-girl-black-sweater-denim-skirt-winter-apparel-shoot_53876-102291.jpg?w=740&t=st=1686145649~exp=1686146249~hmac=17faac5db1e8165463494b7a7badc272dc19469384eaa8fc878fe44f647b2469",
+                    "https://img.freepik.com/free-photo/pretty-young-stylish-sexy-woman-pink-luxury-dress-summer-fashion-trend-chic-style-sunglasses-blue-studio-background-shopping-holding-paper-bags-talking-mobile-phone-shopaholic_285396-2957.jpg?w=1380&t=st=1686143603~exp=1686144203~hmac=88de2477feb6b36a9bdad72e9d4c5c6bba0188550c6a3a64cfe9e0533990a311",
+                    "https://img.freepik.com/free-photo/young-teen-woman-sunglasses-hat-holding-shopping-bags-her-hands-feeling-so-happiness-isolated-green-wall_231208-2681.jpg?w=1380&t=st=1686143747~exp=1686144347~hmac=62920abeafcc7ad416865564514ce5702ddaf9d235d114152257ed0a9030241a"
+                ],
                 "price": "599",
                 "category": "women"
             },
             "w15": {
                 "name": "T-shirt ",
-                "img": "https://images.unsplash.com/photo-1583744946564-b52ac1c389c8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+                "img": [
+                    "https://img.freepik.com/free-photo/pretty-young-stylish-sexy-woman-pink-luxury-dress-summer-fashion-trend-chic-style-sunglasses-blue-studio-background-shopping-holding-paper-bags-talking-mobile-phone-shopaholic_285396-2957.jpg?w=1380&t=st=1686143603~exp=1686144203~hmac=88de2477feb6b36a9bdad72e9d4c5c6bba0188550c6a3a64cfe9e0533990a311",
+                    "https://img.freepik.com/free-photo/blonde-girl-black-sweater-denim-skirt-winter-apparel-shoot_53876-102291.jpg?w=740&t=st=1686145649~exp=1686146249~hmac=17faac5db1e8165463494b7a7badc272dc19469384eaa8fc878fe44f647b2469",
+                    "https://as2.ftcdn.net/v2/jpg/03/33/80/89/1000_F_333808972_qFA3Rjgk56Xo4N80kI1IvaeSCtdLeQcK.jpg",
+                    "https://img.freepik.com/free-photo/stylish-woman-summer-outfit-isolated-posing-fashion-trend-isolated_285396-478.jpg?w=1380&t=st=1686143715~exp=1686144315~hmac=f4c2be4ca7d9ca67443cc31393c7624bf50a3e94469230477a627ffa87aabf1a"
+                ],
                 "price": "610",
                 "category": "women"
             }
