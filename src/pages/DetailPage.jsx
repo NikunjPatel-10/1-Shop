@@ -8,24 +8,15 @@ import { Carousel } from "react-bootstrap";
 const DetailPage = () => {
 
   const [detail, setDetail] = useState({});
-  const [imgIndex, setImgIndex] = useState(0)
+  const [imgIndex, setImgIndex] = useState(0);
   const { cartItems, setCartItems } = useContext(Context);
   const [isOverlayOpen, setIsOverlayOpen] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
-  const path = useLocation();
   const { id } = useParams();
   console.log(id);
   const navigate = useNavigate();
 
 
-
-  // useEffect(() => {
-  //   if (path.pathname.includes("/details")) {
-  //     console.log();
-  //   } else {
-  //     localStorage.removeItem("category");
-  //   }
-  // }, [path]);
 
   useEffect(() => {
     // localStorage.removeItem("category");
@@ -47,11 +38,10 @@ const DetailPage = () => {
   /**
    * to get the details of cart items
    */
-  console.log(detail);
+  // console.log(detail);
   const cartItem = detail;
   cartItem.quantity = 1;
   cartItem.totalPrice = cartItem.price;
-  // console.log(cartItem);
   const cartDataHandler = () => {
     postCartProducts(cartItem);
     // window.history.back();
@@ -62,10 +52,7 @@ const DetailPage = () => {
 
   const showimage = (index) => {
     setImgIndex(index)
-    // for (let i = 0; i < (detail.img).length; i++) {
-    //   (detail.img)[i].className = (detail.img).className.replace("active", "")
-    // }
-    // (detail.img)[index].className = "active"
+
   }
 
   const openOverlay = () => {
@@ -74,8 +61,11 @@ const DetailPage = () => {
 
   const closeOverlay = () => {
     setIsOverlayOpen(false)
-    setCurrentSlide(0);
   }
+
+
+
+
 
   return (
     <div className=" h-100 w-75  m-auto">
@@ -88,17 +78,29 @@ const DetailPage = () => {
           </figure>
           {/* for overlay  */}
           {isOverlayOpen &&
-            <figure>
-              <div className="overlay" onClick={closeOverlay}>
-                <img src={detail.img && detail.img[imgIndex]} alt="no img found" className="overlay-img" />
+            <div className="overlay"  >
+              <div className="backdrop" onClick={closeOverlay} ></div>
+              {/* <img src={detail.img && detail.img[imgIndex]} alt="no img found" className="overlay-img" /> */}
+              <div className="model h-50 w-50 d-flex justify-content-center align-items-center" >
+                <Carousel
+                  indicators={false}
+                >
+                  {(detail.img || []).map((img, index) => (
+                    <Carousel.Item key={index}>
+                      <figure className="carousel-img-wrapper">
+                        <img src={img} alt="no img found" className="overlay-img" />
+                      </figure>
+                    </Carousel.Item>
+                  ))}
+                </Carousel>
               </div>
-            </figure>
 
+            </div>
           }
 
           <div className="row ">
             {(detail.img) && (detail.img).map((img, index) => (
-              <div className="col-6 col-sm-3 my-1 " onClick={() => showimage(index)}>
+              <div className="col-6 col-sm-3 my-1 " key={img.id} onClick={() => showimage(index)}>
                 <figure className={`small-img-wrapper mb-0 ${index === imgIndex ? "selected" : ''}
                 `}>
                   <img src={img} alt="no-image found" />
