@@ -2,6 +2,10 @@ import React from 'react'
 
 const ThankYou = () => {
 
+
+
+    //returns different result given same inputs
+    impureAdd(5);
     return (
         <div className="">
             <div className="container">

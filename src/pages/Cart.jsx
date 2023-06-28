@@ -3,6 +3,8 @@ import useCartData from "./../hooks/useCartData";
 import CartItem from "../components/CartItem";
 import Context from "../context/Context";
 import { deleteCartProduct } from "../services/apiservice";
+import emptyCart from './../assets/images/empty-cart.png'
+import { Link } from "react-router-dom";
 
 const Cart = () => {
   const getCartData = useCartData();
@@ -46,19 +48,30 @@ const Cart = () => {
   }
 
   return (
-    <div className="h-100   m-3 align-items-center ">
-      <ul className=" cart-size  p-0">
-        {cartData.map((data) => {
-          return (
-            <CartItem key={data.id} cartData={...data} updateTotalPrice={updateTotalPrice} onDeleteProduct={deleteProductHandler} />
-          );
-        })}
-        <li className="d-flex justify-content-between  border-top border-dark px-2">
-          <p>Total Amount</p>
-          <p>₹{total} </p>
-        </li>
-      </ul>
-    </div>
+    <>
+      {(cartItems.length < 1) ?
+        <div class="empty-cart shadow">
+          <img src={emptyCart} class="img-fluid  mr-3" />
+          <h3><strong>Your Cart is Empty</strong></h3>
+          <h4>Add something to make me happy :)</h4>
+          <Link to={'/home'}>
+            <button className="btn btn-success">continue shopping</button>
+          </Link>
+        </div>
+        : <div className="h-100   m-3 align-items-center ">
+          <ul className=" cart-size  p-0">
+            {cartData.map((data) => {
+              return (
+                <CartItem key={data.id} cartData={...data} updateTotalPrice={updateTotalPrice} onDeleteProduct={deleteProductHandler} />
+              );
+            })}
+            <li className="d-flex justify-content-between  border-top border-dark px-2">
+              <p>Total Amount</p>
+              <p>₹{total} </p>
+            </li>
+          </ul>
+        </div>}
+    </>
   );
 };
 

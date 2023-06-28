@@ -81,13 +81,13 @@ const DetailPage = () => {
             <div className="overlay"  >
               <div className="backdrop" onClick={closeOverlay} ></div>
               {/* <img src={detail.img && detail.img[imgIndex]} alt="no img found" className="overlay-img" /> */}
-              <div className="model h-50 w-50 d-flex justify-content-center align-items-center" >
+              <div className=" h-50 w-50 d-flex justify-content-center align-items-center" >
                 <Carousel
                   indicators={false}
                 >
-                  {(detail.img || []).map((img, index) => (
+                  {(detail.img).map((img, index) => (
                     <Carousel.Item key={index}>
-                      <figure className="carousel-img-wrapper">
+                      <figure className="carousel-img-wrapper mb-0">
                         <img src={img} alt="no img found" className="overlay-img" />
                       </figure>
                     </Carousel.Item>

@@ -4,7 +4,6 @@ import Card from "../components/Card";
 
 const Men = () => {
   const data = useMenData();
-
   const [menProducts, setMenProducts] = useState([]);
 
   useEffect(() => {

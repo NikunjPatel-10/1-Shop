@@ -2,6 +2,23 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 const PagenotFound = () => {
+    let plsMutateMe = 0;
+    const impureAdd = (num) => {
+        return plsMutateMe += num;
+    };
+    // const d = impureAdd(5);
+    // const e = impureAdd(5);
+    function* hello() {
+        console.log("zero");
+        yield 1
+        console.log('first');
+        yield 2
+    }
+    const d = hello()
+    const e = d.next().value
+    // const f = d.next().value
+
+    console.log(e)
 
     const [a, seta] = useState(5)
     const [state, setState] = useState(4)

@@ -74,3 +74,27 @@
         cursor: pointer;
     }
 }
+
+.cart-container {
+    padding: 20px;
+}
+
+.empty-cart {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.empty-cart-message {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.empty-cart-image {
+    width: 200px;
+    height: auto;
+}

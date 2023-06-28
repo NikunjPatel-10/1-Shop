@@ -1,13 +1,22 @@
 import React, { useEffect, useState } from "react";
 import { getMenProducts } from "../services/apiservice";
+import { useContext } from "react";
+import Context from "../context/Context";
 
 const useMenData = () => {
   const [menProducts, setMenProducts] = useState([]);
 
+  const { showSkeleton, setShowSkeleton } = useContext(Context)
+
   useEffect(() => {
+    setShowSkeleton(true)
     getMenProducts()
       .then((response) => {
         // console.log(response);
+        setTimeout(() => {
+
+          setShowSkeleton(false)
+        }, 3000)
         const responseData = [];
         for (const key in response.data) {
           const id = key;
@@ -24,6 +33,7 @@ const useMenData = () => {
           responseData.push(item);
         }
         setMenProducts(responseData);
+
       })
       .catch((error) => {
         console.log("error while fetching the men clothes", error);

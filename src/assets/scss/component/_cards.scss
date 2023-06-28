@@ -36,3 +36,29 @@
 .card:hover {
     box-shadow: $card-box-shadow-hover;
 }
+
+/* Skeleton styles */
+.skeleton-card {
+    border: 1px solid #f2f2f2;
+    /* Border color for the skeleton card */
+    background-color: #ffffff;
+    /* Card background color */
+}
+
+.skeleton-img {
+    width: 100%;
+    height: 200px;
+    background-color: #f2f2f2;
+}
+
+.skeleton-text {
+    margin-top: 10px;
+}
+
+.skeleton-text-line {
+    width: 80%;
+    height: 10px;
+    margin-bottom: 10px;
+    background-color: #f2f2f2;
+    /* Placeholder background color */
+}

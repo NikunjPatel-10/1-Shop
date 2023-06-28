@@ -3,6 +3,7 @@ import Context from "./Context";
 
 const ContextProvider = (props) => {
   const [cartItems, setCartItems] = useState([]);
+  const [showSkeleton, setShowSkeleton] = useState(false)
 
   // useEffect(() => {
   //   console.log('context');
@@ -11,6 +12,8 @@ const ContextProvider = (props) => {
   const contextValue = {
     cartItems,
     setCartItems,
+    showSkeleton,
+    setShowSkeleton
   };
 
   return (
