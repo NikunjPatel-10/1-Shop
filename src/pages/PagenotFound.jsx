@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import './pagenotfound.css'
 
 const PagenotFound = () => {
     let plsMutateMe = 0;
@@ -41,7 +42,7 @@ const PagenotFound = () => {
 
     return (
         <div className="d-flex justify-content-center align-items-center h-100 ">
-            <div className="row  d-flex align-items-center justify-content-center ">
+            {/* <div className="row  d-flex align-items-center justify-content-center ">
                 <div className="col-md-12 text-center">
                     <h1 className="big-text">Oops!</h1>
                     <h2 className="small-text">404 - PAGE NOT FOUND</h2>
@@ -60,6 +61,10 @@ const PagenotFound = () => {
                     </Link>
                     <button onClick={abc}>click </button>{state}-{a}
                 </div>
+            </div> */}
+            <div className='parent border'>
+                <div className='child'>1</div>
+                <span className='border '>123<a className='border border-danger'>i am paragraph</a>456</span>
             </div>
         </div>
     )

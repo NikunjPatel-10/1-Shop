@@ -13,6 +13,8 @@ export const getProductsById = async (category, id) => {
   return await axios.get(baseUrl + "product/" + `${category}/` + id + ".json")
 };
 
+
+
 export const postCartProducts = async (data) => {
   return await axios.post(baseUrl + "cart.json", { ...data }).then((res) => {
     // console.log(res);
@@ -30,3 +32,6 @@ export const updateCartProducts = async (data, id) => {
 export const deleteCartProduct = async (id) => {
   return await axios.delete(baseUrl + "cart/" + id + ".json");
 };
+
+
+

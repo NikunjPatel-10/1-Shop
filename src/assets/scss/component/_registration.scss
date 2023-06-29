@@ -1,0 +1,28 @@
+.registration-wrapper {
+    background-color: #fff;
+
+    .logo-img-wrapper {
+        height: 250px;
+        width: 250px;
+        overflow: hidden;
+
+        img {
+            height: 100%;
+            width: auto;
+            object-fit: cover;
+        }
+    }
+
+    .register-form {
+        width: 70%;
+    }
+
+    .error-message {
+        color: red;
+        padding-inline: 10px;
+    }
+
+    .register-btn {
+        background-color: #f78b73;
+    }
+}

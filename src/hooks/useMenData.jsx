@@ -16,7 +16,7 @@ const useMenData = () => {
         setTimeout(() => {
 
           setShowSkeleton(false)
-        }, 3000)
+        }, 500)
         const responseData = [];
         for (const key in response.data) {
           const id = key;

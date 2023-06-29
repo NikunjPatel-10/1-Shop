@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import { Outlet } from "react-router";
 import useCartData from "../hooks/useCartData";
 import Context from "../context/Context";
+import ProtectedRoute from "./ProtectedRoute";
 
 const Master = () => {
   const getCartData = useCartData();
@@ -21,7 +22,7 @@ const Master = () => {
         <Header />
       </div>
       <div className="flex-grow-1">
-        <Outlet />
+        <ProtectedRoute />
       </div>
       <Footer />
     </div>

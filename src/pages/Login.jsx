@@ -1,12 +1,22 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
-import { Link } from 'react-router-dom';
-import loginImg from './../assets/images/login-img.png'
+import { Link, useNavigate } from 'react-router-dom';
+import mainImg from './../assets/images/login-img.png'
 import logo from './../assets/images/logo.png'
 import { IconEye, IconEyeOff } from '@tabler/icons-react';
+import useRegisterData from '../hooks/useRegisterData';
 
 const Login = () => {
+    const getRegisterData = useRegisterData();
+    const navigate = useNavigate()
+    const [resgisterData, setRegisterData] = useState([]);
+
+    useEffect(() => {
+        setRegisterData(getRegisterData)
+        console.log(resgisterData);
+    }, [getRegisterData]);
+
     const initialValues = {
         email: "",
         password: "",
@@ -16,8 +26,8 @@ const Login = () => {
      * validate using yup
      */
     const validationSchema = Yup.object().shape({
-        email: Yup.string().email("Invalid email").required("Email is required"),
-        password: Yup.string().required("Password is required"),
+        email: Yup.string().email("Invalid email").required("email is required"),
+        password: Yup.string().required("password is required"),
     });
 
     const [showPassword, setShowPassword] = useState(false);
@@ -29,10 +39,22 @@ const Login = () => {
         setShowPassword(!showPassword);
     };
 
+    const handleSubmit = (values) => {
+        let Auth = resgisterData.find((res) => res.email == values.email && res.password == values.password)
+        if (Auth) {
+            alert("login sucessfully")
+            navigate("../home");
+            localStorage.setItem("auth", true)
+        }
+        else {
+            alert("Invalid credentials")
+        }
+    }
+
 
     return (
         <div className='login-wrapper h-100'>
-            <div className='row h-100 '>
+            <div className='row h-100 overflow-auto'>
                 <div className='col-12 col-sm-6 gx-0'>
 
                     <div className=" h-100 d-flex  flex-column  align-items-center">
@@ -44,11 +66,11 @@ const Login = () => {
                         <Formik
                             initialValues={initialValues}
                             validationSchema={validationSchema}
-                        // onSubmit={handleSubmit}
+                            onSubmit={handleSubmit}
                         >
                             <Form className="form-size">
                                 <div className="heading-text mb-4 px-3">
-                                    <h3>Login page</h3>
+                                    <h3>Login </h3>
                                 </div>
                                 <div className="mb-4 ">
                                     {/* <label htmlFor="email" className='m-2'>Email</label> */}
@@ -57,13 +79,14 @@ const Login = () => {
                                         id="email"
                                         name="email"
                                         className="form-control  rounded-pill "
-                                        placeholder="email Id"
+                                        placeholder="Email "
                                     />
 
                                     <ErrorMessage
                                         name="email"
                                         component="div"
                                         className="error-message"
+
                                     />
                                 </div>
                                 <div className="mb-4">
@@ -74,7 +97,7 @@ const Login = () => {
                                             id="password"
                                             name="password"
                                             className="form-input p-0 border-0"
-                                            placeholder="password"
+                                            placeholder="Password"
                                         />
                                         <button type="button" className=' border-0   bg-white eye-icon-btn' onClick={togglePasswordVisibility}>
                                             {showPassword ? <IconEye className='text-secondary' /> : <IconEyeOff className='text-secondary' />}
@@ -103,9 +126,7 @@ const Login = () => {
                     </div>
                 </div>
                 <div className='col-12 col-sm-6 gx-0 h-100'>
-                    <figure className='login-img-wrapper  mb-0'>
-                        <img src={loginImg} />
-                    </figure>
+                    <img src={mainImg} className='h-100 w-100' alt='no-img-found' />
                 </div>
             </div>
         </div>

@@ -1,0 +1,8 @@
+.parent :not(:first-child) {
+    background-color: red;
+}
+
+.child {
+    height: 20px;
+    width: 20px;
+}

@@ -1,12 +1,18 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import { getWomenProducts } from "../services/apiservice";
+import Context from "../context/Context";
 
 const useWomenData = () => {
   const [womenProducts, setWomenProducts] = useState([]);
+  const { showSkeleton, setShowSkeleton } = useContext(Context)
 
   useEffect(() => {
+    setShowSkeleton(true)
     getWomenProducts().then((response) => {
       // console.log(response);
+      setTimeout(() => {
+        setShowSkeleton(false)
+      }, 500)
       const responseData = [];
       for (const key in response.data) {
         const id = key;

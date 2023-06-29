@@ -17,13 +17,10 @@
         width: 70%;
     }
 
-    // .form-control {
-    //     // padding: 5px;
-    //     width: 100%;
-    //     border: 1px solid #ccc;
-    //     outline: none;
-    // }
-
+    .error-message {
+        color: red;
+        padding-inline: 10px;
+    }
 
 
     .password-wrapper {
@@ -50,6 +47,7 @@
     .login-btn {
         background-color: #f78b73;
     }
+
 
 
 
