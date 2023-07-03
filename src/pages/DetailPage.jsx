@@ -110,10 +110,10 @@ const DetailPage = () => {
           </div>
         </div>
         <div className="col-12 col-sm-5 p-3">
-          <div className="w-100 d-flex flex-column justify-content-center align-items-center">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora est corporis cum asperiores officiis incidunt rerum veniam praesentium dolores atque ullam, cumque quam ipsam tenetur!</p>
-            <p className="p-2 mb-0"> Name : {detail.name}</p>
-            <p className="p-2 mb-0"> Price : ₹ {detail.price}</p>
+          <div className=" h-100 w-100 d-flex flex-column  align-items-center">
+            <h3 className="p-2 mb-0">  {detail.name}</h3>
+            <p className="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora est corporis cum asperiores officiis incidunt rerum veniam praesentium dolores atque ullam, cumque quam ipsam tenetur!</p>
+            <p className="p-2 mb-0">  ₹ {detail.price}</p>
           </div>
           <div className="w-100 d-flex justify-content-center">
             <button className="btn btn-success" onClick={cartDataHandler}>
