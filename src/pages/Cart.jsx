@@ -8,7 +8,6 @@ import { Link } from "react-router-dom";
 
 const Cart = () => {
   const getCartData = useCartData();
-  // const [cartData, setCartData] = useState([]);
   const [total, setTotal] = useState(0);
 
   const { setCartItems, cartItems } = useContext(Context);
