@@ -62,6 +62,7 @@ const ContactUsPage = () => {
             text="My Marker"
           />
         </GoogleMapReact>
+        {/* <iframe aria-hidden="true" frameborder="0" tabindex="-1" style={{ z-index: "-1", position: "absolute", width: "100%", height: "100%", top: '0px', left: '0px', border: 'none'}}></iframe> */}
       </div>
       <div className="contact-us-container  row">
         <div className="col-12 col-sm-6 p-2">
@@ -142,7 +143,7 @@ const ContactUsPage = () => {
           </form>
         </div>
       </div>
-    </div>
+    </div >
   );
 };
 

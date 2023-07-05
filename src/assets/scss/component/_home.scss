@@ -8,3 +8,9 @@
     color: blue;
     cursor: pointer;
 }
+
+@media(max-width:992px) {
+    .see-all-text {
+        padding: none;
+    }
+}

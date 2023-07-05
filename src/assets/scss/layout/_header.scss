@@ -30,13 +30,31 @@
 }
 
 .mobile-size {
-   transform: translateY(-500px);
+   display: none;
+
+   .nav-item {
+      margin-bottom: 10px;
+   }
+
+   .nav-item :hover {
+      color: blue;
+   }
 }
 
 #mobile-nav:checked+.mobile-size {
-   transform: translateY(0px);
+   display: inline-block;
+   // transform: translateY(0px);
    transition: 0.1s ease-in-out;
-   background-color: white;
+   background-color: #fff;
    color: black;
+   list-style: none;
+   position: absolute;
+   top: 0%;
+   left: 0%;
+   z-index: 10;
+   width: 100%;
+}
+
+.list-style {
    list-style: none;
 }
