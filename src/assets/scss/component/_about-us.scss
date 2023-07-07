@@ -2,17 +2,32 @@
     height: 100%;
     width: 75%;
     margin: auto;
+
+    .description-text {
+        color: #888;
+        font-family: "Poppins-Light";
+        font-size: 18px;
+        line-height: 1.78;
+
+    }
 }
 
 .about-us-img-wrapper {
-    height: 500px;
-    width: 500px;
+    height: 400px;
+    width: 400px;
     overflow: hidden;
     border-radius: 10px;
+    cursor: pointer;
 
     img {
         height: 100%;
         width: 100%;
         // object-fit: cover;
     }
+
+    :hover {
+        transition: all 0.2s linear;
+        transform: scale(1.2);
+    }
+
 }

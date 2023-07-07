@@ -28,7 +28,7 @@ const Header = () => {
 
 
   return (
-    <div className="d-flex header w-100 position-relative">
+    <div className="d-flex header w-100 position-relative py-2 ">
       {/* for destop-veiw */}
       <div className=" d-none d-sm-block w-100">
         <ul className="nav  d-flex justify-content-center w-100">

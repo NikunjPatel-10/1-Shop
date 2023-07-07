@@ -2,19 +2,20 @@
    Brand Logo and Primary Navigation
 */
 .header {
-   background-color: #f2775c;
+   background-color: #ffffff;
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
    .cart-items {
       top: -17%;
       right: -15%;
-      background-color: green;
+      background-color: #6c7ae0;
       border-radius: 50%;
       height: 15px;
       width: 15px;
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 13px;
+      font-size: 12px;
 
       &:hover {
          color: white;
@@ -37,7 +38,8 @@
    }
 
    .nav-item :hover {
-      color: blue;
+      color: #6c7ae0;
+      ;
    }
 }
 

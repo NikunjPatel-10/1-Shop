@@ -19,8 +19,10 @@
             aspect-ratio: 3/2;
         }
 
+
         :hover {
-            transform: scale(1.5);
+            transition: all 0.2s linear;
+            transform: scale(1.2);
         }
 
     }
