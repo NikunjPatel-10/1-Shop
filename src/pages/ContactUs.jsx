@@ -103,7 +103,7 @@ const ContactUsPage = () => {
             </span>
           </div>
         </div>
-        <div className="col-12 col-sm-6 p-2">
+        <div className="col-12 col-sm-6 p-3">
           <form className="contact-form border rounded p-2" onSubmit={handleSubmit}>
             <h2>Contact-Us </h2>
             <div className="form-group">

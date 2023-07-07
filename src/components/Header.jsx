@@ -27,7 +27,7 @@ const Header = () => {
 
   return (
     <div className="d-flex header w-100 position-relative">
-
+      {/* for destop-veiw */}
       <div className=" d-none d-sm-block w-100">
         <ul className="nav  d-flex justify-content-center w-100">
           <li className="nav-item">
@@ -51,12 +51,12 @@ const Header = () => {
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to={"./contact-us"}>
+            <Link className="nav-link" to={"/contact-us"}>
               Contact-us
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to={"./cart"}>
+            <Link className="nav-link" to={"/cart"}>
               <div className="position-relative">
                 <IconShoppingCart />
                 <span className="position-absolute cart-items">{quantity}</span>
@@ -64,8 +64,9 @@ const Header = () => {
             </Link>
           </li>
         </ul>
-
       </div>
+
+      {/* for mobile-veiw */}
       <div className="d-block d-sm-none  w-100 ">
         <div className="d-flex align-items-center justify-content-between w-100 p-2">
           <div className=" d-flex justify-content-start align-items-center">
@@ -98,7 +99,7 @@ const Header = () => {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to={"./contact-us"}>
+                  <Link className="nav-link" to={"/contact-us"}>
                     Contact-us
                   </Link>
                 </li>
@@ -107,7 +108,7 @@ const Header = () => {
           </div>
 
           <div className="nav-item mx-2">
-            <Link className="nav-link" to={"./cart"}>
+            <Link className="nav-link" to={"/cart"}>
               <div className="position-relative">
                 <IconShoppingCart color="white" />
                 <span className="position-absolute cart-items">{quantity}</span>
@@ -116,16 +117,9 @@ const Header = () => {
           </div>
         </div>
       </div>
-      {/* <div className="d-flex justify-content-center align-items-sm-center">
-          <Link className="nav-link" to={"./cart"}>
-            <div className="position-relative">
-              <IconShoppingCart />
-              <span className="position-absolute cart-items">{quantity}</span>
-            </div>
-          </Link>
-        </div> */}
+
       <div className="d-flex justify-content-center align-items-center me-sm-3 me-2">
-        <button className=" btn btn-success btn-sm" onClick={onLogout}>logout</button>
+        <button className=" btn btn-success btn-sm" onClick={onLogout}>Logout</button>
       </div>
     </div>
   );

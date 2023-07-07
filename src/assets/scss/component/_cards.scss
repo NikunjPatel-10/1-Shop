@@ -19,22 +19,18 @@
             aspect-ratio: 3/2;
         }
 
+        :hover {
+            transform: scale(1.5);
+        }
+
     }
 
-    // Display only two lines of text
 
-
-    .card-text {
-        height: $card-description-height;
-    }
-
-    .btn:hover {
-        color: $white;
-    }
 }
 
 .card:hover {
     box-shadow: $card-box-shadow-hover;
+
 }
 
 /* Skeleton styles */

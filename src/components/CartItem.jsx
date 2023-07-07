@@ -4,13 +4,17 @@ import useCartData from "./../hooks/useCartData";
 import { IconX } from "@tabler/icons-react";
 
 const CartItem = ({ cartData, updateTotalPrice, onDeleteProduct }) => {
-
-
   const { name, img, price, category, id, quantity, totalPrice } = cartData;
+
+
   const [cart, setCart] = useState({
     counter: quantity,
     Price: totalPrice,
   });
+
+  /**
+   * for decrease the quantity and update the price 
+   */
   const removeHandler = () => {
     if (cart.counter > 1) {
       const updatedCounter = cart.counter - 1;
@@ -22,12 +26,8 @@ const CartItem = ({ cartData, updateTotalPrice, onDeleteProduct }) => {
           quantity: updatedCounter,
         },
         id
-      ).then((res) => {
-        if (res) {
-          // getCartData;
-          // console.log(getCartData);
-        }
-      });
+      )
+
 
       setCart({
         counter: updatedCounter,
@@ -38,7 +38,7 @@ const CartItem = ({ cartData, updateTotalPrice, onDeleteProduct }) => {
   };
 
   /**
-   * increase counter and 
+   * increase quabtity and updated price
    */
   const addHandler = () => {
     const updatedCounter = cart.counter + 1;

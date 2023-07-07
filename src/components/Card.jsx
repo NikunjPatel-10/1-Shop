@@ -4,28 +4,31 @@ import Context from "../context/Context";
 
 
 const Card = ({ cardData }) => {
-  const [cartdata, setCartdata] = useState(false)
+  // const [cartdata, setCartdata] = useState(false)
 
   const { showSkeleton } = useContext(Context)
   const navigate = useNavigate();
 
+  /**
+   * for for the card detail in detail-page
+   */
   const detailsHandler = () => {
     localStorage.setItem("category", cardData.category);
     navigate("/details/" + cardData.id);
   };
-  useEffect(() => {
-    // setTimeout(() => {
-    setCartdata(true)
-    // }, 5000);
-  }, [cardData])
-  useEffect(() => {
-    console.log(cartdata);
-  }, [showSkeleton])
+
+
+  // useEffect(() => {
+  //   setCartdata(true)
+  // }, [cardData])
+
+
+
+  /**
+   * when the data is not loaded
+   */
   if (showSkeleton) {
-
     return (
-
-
       <div className="card col-12 col-sm-6 col-md-4 m-2 p-2 gx-0 skeleton-card ">
         <div className="skeleton-img"></div>
         <div className="skeleton-text">
@@ -34,8 +37,8 @@ const Card = ({ cardData }) => {
         </div>
       </div>
     )
-  } else {
-
+  }
+  else {
     return (
       <div
         className="card col-12 col-sm-6 col-md-4  m-2 p-2 gx-0"
