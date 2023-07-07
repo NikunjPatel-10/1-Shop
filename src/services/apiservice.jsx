@@ -21,6 +21,12 @@ export const postCartProducts = async (data) => {
   });
 };
 
+
+
+/**
+ * @description for cart
+ * @returns 
+ */
 export const getCartProducts = async () => {
   return await axios.get(baseUrl + "cart.json");
 };

@@ -49,21 +49,7 @@ const ContactUsPage = () => {
 
   return (
     <div className="contact-us-wrapper">
-      <div style={{ height: '60vh', width: '100%' }} className="mt-3">
-        <GoogleMapReact
-          bootstrapURLKeys={{ key: "AIzaSyClKKb1cMAt1LmTuQKa8SZAr4k9JFg36IY" }}
-          defaultCenter={defaultProps.center}
-          defaultZoom={defaultProps.zoom}
 
-        >
-          <Map
-            lat={59.955413}
-            lng={30.337844}
-            text="My Marker"
-          />
-        </GoogleMapReact>
-        {/* <iframe aria-hidden="true" frameborder="0" tabindex="-1" style={{ z-index: "-1", position: "absolute", width: "100%", height: "100%", top: '0px', left: '0px', border: 'none'}}></iframe> */}
-      </div>
       <div className="contact-us-container  row">
         <div className="col-12 col-sm-6 p-2">
           <div>
@@ -142,6 +128,22 @@ const ContactUsPage = () => {
             </div>
           </form>
         </div>
+      </div>
+
+      <div style={{ height: '60vh', width: '100%' }} className="p-2 ">
+        <GoogleMapReact
+          bootstrapURLKeys={{ key: "AIzaSyClKKb1cMAt1LmTuQKa8SZAr4k9JFg36IY" }}
+          defaultCenter={defaultProps.center}
+          defaultZoom={defaultProps.zoom}
+
+        >
+          <Map
+            lat={59.955413}
+            lng={30.337844}
+            text="My Marker"
+          />
+        </GoogleMapReact>
+        {/* <iframe aria-hidden="true" frameborder="0" tabindex="-1" style={{ z-index: "-1", position: "absolute", width: "100%", height: "100%", top: '0px', left: '0px', border: 'none'}}></iframe> */}
       </div>
     </div >
   );

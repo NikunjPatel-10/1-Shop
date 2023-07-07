@@ -52,7 +52,6 @@ const DetailPage = () => {
 
   const showimage = (index) => {
     setImgIndex(index)
-
   }
 
   const openOverlay = () => {

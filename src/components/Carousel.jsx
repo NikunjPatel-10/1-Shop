@@ -8,9 +8,9 @@ const CarouselData = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://img.freepik.com/free-photo/portrait-handsome-smiling-stylish-young-man_158538-19393.jpg?w=1380&t=st=1686563511~exp=1686564111~hmac=6b5b5cd08ef6839bd010034712e611159fd0ca91af5dd3f098181da30863aec5"
+            src="https://preview.colorlib.com/theme/cozastore/images/slide-03.jpg.webp"
             alt="Second slide"
-            style={{ height: "600px", width: '100%' }}
+          // style={{ height: "600px", width: '100%' }}
           />
 
           {/* <Carousel.Caption>
@@ -21,9 +21,9 @@ const CarouselData = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://img.freepik.com/free-photo/girl-yellow-wall-with-shopping-bags_1157-34348.jpg?w=1380&t=st=1686633040~exp=1686633640~hmac=452a9d50395338272474005e7706cf1600ba46ac67b4b3c6d049cfc8d951fd04"
+            src="https://preview.colorlib.com/theme/cozastore/images/slide-01.jpg.webp"
             alt="Third slide"
-            style={{ height: "600px", width: '100%' }}
+          // style={{ height: "600px", width: '100%' }}
           />
 
           {/* <Carousel.Caption>
@@ -34,9 +34,9 @@ const CarouselData = () => {
         <Carousel.Item>
           <img
             className="d-block w-100 object-fit-fill"
-            src="https://img.freepik.com/free-photo/stylish-woman-summer-outfit-isolated-posing-fashion-trend-isolated_285396-10684.jpg?w=1380&t=st=1686574305~exp=1686574905~hmac=87ed0db65db6ef78048c8836edacf3ba0c7d3707470ac11b0983793516edcf27"
+            src="https://preview.colorlib.com/theme/cozastore/images/slide-02.jpg.webp"
             alt="First slide"
-            style={{ height: "600px", width: '100%' }}
+          // style={{ height: "600px", width: '100%' }}
           />
           {/* <Carousel.Caption>
             <h3>First slide label</h3>

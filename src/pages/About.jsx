@@ -8,13 +8,13 @@ const About = () => {
       <div className="about-us-wrapper ">
         <div className="row">
 
-          <div className="col-12 col-sm-6 p-4">
-            <h1 className="text-center">Our Story</h1>
+          <div className="col-12 col-sm-7 p-4">
+            <h1 className="">Our Story</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quod natus ab optio aspernatur ea porro accusantium asperiores dolores cupiditate quidem officia mollitia vero nesciunt saepe id possimus aperiam omnis fuga odit neque, corrupti rem. Numquam culpa molestiae modi recusandae, sint illo? Doloribus perferendis aliquid ut cumque ea impedit placeat!</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque possimus distinctio quos expedita cupiditate magni. Voluptatem officia quo, ipsum eos suscipit error earum doloremque perspiciatis.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis mollitia culpa, ullam magnam, sed, vero cumque omnis excepturi reprehenderit consequuntur fugiat voluptatibus. Veniam, magnam animi!</p>
           </div>
-          <div className="col-12 col-sm-6 gx-0 p-2">
+          <div className="col-12 col-sm-5 gx-0 p-2">
             <figure className="about-us-img-wrapper mb-0 w-100">
               <img src={clothShop} />
             </figure>

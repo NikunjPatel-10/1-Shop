@@ -9,7 +9,7 @@ const Header = () => {
   const navigate = useNavigate()
   // const quantity = cartItems.length
   // localStorage.setItem("quantity", cartItems);
-  const [showMenu, setShowmenu] = useState(false)
+  const [showMenu, setShowmenu] = useState(false);
 
   const quantity = cartItems.length;
 
@@ -24,6 +24,8 @@ const Header = () => {
   const menuHandler = () => {
     setShowmenu(false)
   }
+
+
 
   return (
     <div className="d-flex header w-100 position-relative">
@@ -74,7 +76,7 @@ const Header = () => {
               <IconMenu2 className="text-white d-block d-sm-none" />
             </label>
           </div>
-          <input type="checkbox" checked={showMenu} id="mobile-nav" />
+          <input type="checkbox" checked={showMenu} id="mobile-nav" readOnly />
           <div className="mobile-size m-auto shadow " onClick={menuHandler}>
             <div className="w-100   d-flex justify-content-center py-2">
               <ul className="list-style m-0">
