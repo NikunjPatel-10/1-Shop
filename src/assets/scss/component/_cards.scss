@@ -25,13 +25,44 @@
             transform: scale(1.2);
         }
 
+
     }
+
+    .quick-veiw-btn {
+        // display: none;
+        visibility: hidden;
+        position: absolute;
+        left: 23%;
+        bottom: 0%;
+    }
+
+
 
 
 }
 
 .card:hover {
     box-shadow: $card-box-shadow-hover;
+
+    .quick-veiw-btn {
+        bottom: 45%;
+        // display: block;
+        visibility: visible;
+        width: 139px;
+        height: 40px;
+        background-color: white;
+        color: black;
+        border: none;
+        // outline: none;
+        border-radius: 25px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+            background-color: #717fe0;
+            color: white;
+        }
+    }
 
 }
 

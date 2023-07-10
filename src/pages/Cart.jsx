@@ -57,7 +57,7 @@ const Cart = () => {
             <button className="btn btn-success">continue shopping</button>
           </Link>
         </div>
-        : <div className="h-100   m-3 align-items-center ">
+        : <div className="h-100   m-3 align-items-center">
           <ul className=" cart-size  p-0">
             {cartData.map((data) => {
               return (

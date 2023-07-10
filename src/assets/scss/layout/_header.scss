@@ -16,10 +16,14 @@
       justify-content: center;
       align-items: center;
       font-size: 12px;
+      color: white;
 
-      &:hover {
-         color: white;
-      }
+
+   }
+
+   .logout-btn {
+      background-color: #6c7ae0;
+      color: white;
    }
 
 }

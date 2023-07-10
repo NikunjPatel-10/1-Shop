@@ -112,7 +112,7 @@ const Header = () => {
           <div className="nav-item mx-2">
             <Link className="nav-link" to={"/cart"}>
               <div className="position-relative">
-                <IconShoppingCart  />
+                <IconShoppingCart />
                 <span className="position-absolute cart-items">{quantity}</span>
               </div>
             </Link>
@@ -121,7 +121,7 @@ const Header = () => {
       </div>
 
       <div className="d-flex justify-content-center align-items-center me-sm-3 me-2">
-        <button className=" btn btn-success btn-sm" onClick={onLogout}>Logout</button>
+        <button className=" btn logout-btn btn-sm" onClick={onLogout}>Logout</button>
       </div>
     </div>
   );
