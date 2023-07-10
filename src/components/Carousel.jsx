@@ -2,6 +2,7 @@ import React from "react";
 import { Carousel } from "react-bootstrap";
 
 const CarouselData = () => {
+
   return (
     <>
       <Carousel indicators={false}>
@@ -13,10 +14,10 @@ const CarouselData = () => {
           // style={{ height: "600px", width: '100%' }}
           />
 
-          {/* <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption> */}
+          <Carousel.Caption className="text-start ">
+            <h2 className="text-dark main-heading">New Arrivals</h2>
+            <button className=" shop-btn">SHOP NOW</button>
+          </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
@@ -26,10 +27,10 @@ const CarouselData = () => {
           // style={{ height: "600px", width: '100%' }}
           />
 
-          {/* <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption> */}
+          <Carousel.Caption className="text-start ">
+            <h2 className="text-dark main-heading">Women Clothes</h2>
+            <button className=" shop-btn">SHOP NOW</button>
+          </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
@@ -38,10 +39,10 @@ const CarouselData = () => {
             alt="First slide"
           // style={{ height: "600px", width: '100%' }}
           />
-          {/* <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption> */}
+          <Carousel.Caption className="text-start ">
+            <h2 className="text-dark main-heading">Mens New Arrival</h2>
+            <button className=" shop-btn">SHOP NOW</button>
+          </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
     </>

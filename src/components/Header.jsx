@@ -73,7 +73,7 @@ const Header = () => {
         <div className="d-flex align-items-center justify-content-between w-100 p-2">
           <div className=" d-flex justify-content-start align-items-center">
             <label htmlFor="mobile-nav" onClick={menuBarHandler} >
-              <IconMenu2 className="text-white d-block d-sm-none" />
+              <IconMenu2 className=" d-block d-sm-none" />
             </label>
           </div>
           <input type="checkbox" checked={showMenu} id="mobile-nav" readOnly />
@@ -112,7 +112,7 @@ const Header = () => {
           <div className="nav-item mx-2">
             <Link className="nav-link" to={"/cart"}>
               <div className="position-relative">
-                <IconShoppingCart color="white" />
+                <IconShoppingCart  />
                 <span className="position-absolute cart-items">{quantity}</span>
               </div>
             </Link>
