@@ -21,7 +21,7 @@ const Master = () => {
       <div className="position-sticky top-0 z-2">
         <Header />
       </div>
-      <div className="flex-grow-1">
+      <div className="flex-grow-1 ">
         <ProtectedRoute />
       </div>
       <Footer />

@@ -1,5 +1,5 @@
 .login-wrapper {
-    background-color: #fff;
+    background-color: $primary;
 
     .logo-img-wrapper {
         height: 250px;
@@ -37,7 +37,7 @@
     .password-wrapper button {
         border: none;
         outline: none;
-        background-color: white;
+        background-color: $primary;
     }
 
     .eye-icon-btn {

@@ -1,9 +1,11 @@
 import React, { useContext, useEffect, useState } from "react";
-import { useLocation, useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { getProductsById, postCartProducts } from "../services/apiservice";
 import useCartData from "../hooks/useCartData";
 import Context from "../context/Context";
 import { Carousel } from "react-bootstrap";
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 const DetailPage = () => {
 
@@ -45,9 +47,12 @@ const DetailPage = () => {
   const cartDataHandler = () => {
     postCartProducts(cartItem);
     // window.history.back();
-    navigate(-1);
+    // navigate(-1);
     setCartItems((prevItems) => [...prevItems, cartItem])
-    // console.log(cartItems);
+    // console.log(cartItems);\
+    toast.success('Add to cart Successfully', {
+      position: toast.POSITION.TOP_RIGHT,
+    });
   };
 
   const showimage = (index) => {
@@ -68,8 +73,7 @@ const DetailPage = () => {
 
   return (
     <div className=" h-100 w-75  m-auto">
-
-      <div className=" h-100 w-100 row justify-content-center align-items-center p-3  overflow-hidden  ">
+      <div className=" h-100 w-100 row justify-content-center  p-3  overflow-hidden  ">
 
         <div className="col-12 col-sm-7 gx-0">
           <figure className="big-img-wrapper" onClick={openOverlay}>
@@ -108,19 +112,20 @@ const DetailPage = () => {
             ))}
           </div>
         </div>
-        <div className="col-12 col-sm-5 ">
-          <div className=" h-100 w-100 d-flex flex-column  align-items-center">
-            <h3 className="p-2 mb-3">  {detail.name}</h3>
-            <p className="text-center mb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora est corporis cum asperiores officiis incidunt rerum veniam praesentium dolores atque ullam, cumque quam ipsam tenetur!</p>
-            <p className="p-2 mb-3">  ₹ {detail.price}</p>
+        <div className="col-12 col-sm-5 pb-5">
+          <div className=" pt-2 ps-5 ">
+            <h3 className="p-2 pb-2">  {detail.name}</h3>
+            <p className="p-2 pb-2">  ₹ {detail.price}</p>
+            <p className=" description-text mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora est corporis cum asperiores officiis incidunt rerum veniam praesentium dolores atque ullam, cumque quam ipsam tenetur!</p>
           </div>
           <div className="w-100 d-flex justify-content-center">
-            <button className="btn btn-success" onClick={cartDataHandler}>
+            <button className="detail-btn " onClick={cartDataHandler}>
               Add to Cart
             </button>
           </div>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };

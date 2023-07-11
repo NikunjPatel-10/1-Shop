@@ -12,6 +12,18 @@
     }
 }
 
+.description-text {
+    color: gray;
+}
+
+.detail-btn {
+    background-color: $secondary;
+    border-radius: 20px;
+    color: $primary;
+    padding: 8px 20px;
+    border: none;
+}
+
 .small-img-wrapper {
     height: 100px;
     // width: 70px;
@@ -69,5 +81,15 @@
         height: 100%;
         width: 100%;
         // object-fit: cover;
+    }
+}
+
+.Toastify__progress-bar--success {
+    background: $secondary
+}
+
+.Toastify__toast-icon {
+    svg {
+        fill: $secondary;
     }
 }

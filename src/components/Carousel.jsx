@@ -2,14 +2,7 @@ import React, { useEffect } from "react";
 import { Carousel, CarouselItem } from "react-bootstrap";
 
 const CarouselData = () => {
-  // const a = document.querySelector('a[role="button"]')
-  // const b = document.querySelector('carousel-control-prev-icon')
-  // console.log(a);
-  // useEffect(() => {
-  //   // a?.classList.remove("carousel-control-prev")
-  //   // b?.classList.add("carousel-control-prev")
-  //   // a?.classList.add("arrow-wrapper")
-  // }, [a])
+  
   const carouselData = [
     {
       img: 'https://preview.colorlib.com/theme/cozastore/images/slide-03.jpg.webp',

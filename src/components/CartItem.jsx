@@ -66,7 +66,7 @@ const CartItem = ({ cartData, updateTotalPrice, onDeleteProduct }) => {
 
   return (
     <>
-      <li className="d-flex justify-content-between cart-item p-2 position-relative">
+      {/* <li className="d-flex justify-content-between cart-item p-2 position-relative">
         <div className="d-flex ">
           <figure className="cart-img-wrapper mb-0 d-flex justify-content-center align-items-center me-3">
             <img src={img} alt="no img found" />
@@ -97,7 +97,47 @@ const CartItem = ({ cartData, updateTotalPrice, onDeleteProduct }) => {
             <IconX className="text-white" height={16} width={16} />
           </button>
         </div>
-      </li>
+      </li> */}
+      <tr className=" justify-content-between cart-item p-2 position-relative border">
+        <td >
+          <div className="d-flex" >
+            <figure className="cart-img-wrapper mb-0 d-flex justify-content-center align-items-center me-3">
+              <img src={img} alt="no img found" />
+            </figure>
+            <p className="mb-0 d-flex align-items-center">{name}</p>
+          </div>
+        </td>
+        <td >
+
+          <div className="d-flex border">
+            <button
+              className={`${cart.counter < 2 ? "disabled" : ""
+                } ${"remove-btn"}`}
+              onClick={() => removeHandler()}
+            >
+              <span>-</span>
+            </button>
+            <div className="quantity">
+              <span className="px-2">{cart.counter}</span>
+            </div>
+            <button className="add-btn" onClick={() => addHandler()}>
+              <span>+</span>
+            </button>
+          </div>
+        </td>
+        <td>
+          <p className="px-3 mb-0">₹ {cart.Price}</p>
+        </td>
+        <div
+          className="close bg-dark bg-opacity-50  "
+          onClick={() => deleteCartItemHandler(id)}
+        >
+          <button className="border-0 bg-transparent ">
+            <IconX className="text-white" height={16} width={16} />
+          </button>
+        </div>
+      </tr>
+
     </>
   );
 };

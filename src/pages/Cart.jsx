@@ -47,18 +47,21 @@ const Cart = () => {
   }
 
   return (
-    <>
+    <div className="cart-wrapper">
+      <div className="cart-container"></div>
       {(cartItems.length < 1) ?
         <div class="empty-cart shadow">
-          <img src={emptyCart} class="img-fluid  mr-3" />
-          <h3><strong>Your Cart is Empty</strong></h3>
+          <figure className="mb-0 bg-primary empty-cart-wrapper">
+            <img src={emptyCart} />
+          </figure>
+          <h3>Your Cart is Empty</h3>
           <h4>Add something to make me happy :)</h4>
           <Link to={'/home'}>
-            <button className="btn btn-success">continue shopping</button>
+            <button className="continue-btn">continue shopping</button>
           </Link>
         </div>
-        : <div className="h-100   m-3 align-items-center">
-          <ul className=" cart-size  p-0">
+        : <div className="h-100 row  m-3 ">
+          {/* <ul className=" cart-size  p-0">
             {cartData.map((data) => {
               return (
                 <CartItem key={data.id} cartData={...data} updateTotalPrice={updateTotalPrice} onDeleteProduct={deleteProductHandler} />
@@ -68,9 +71,94 @@ const Cart = () => {
               <p>Total Amount</p>
               <p>₹{total} </p>
             </li>
-          </ul>
+          </ul> */}
+          <div className="col-lg-10 col-xl-7">
+            <table className="table table-striped w-100 border">
+              <thead className="border">
+                <tr>
+                  <th scope="col">Product</th>
+                  <th scope="col">Quantity</th>
+                  <th scope="col">Total-Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                {cartData.map((data) => {
+                  return (
+                    <CartItem key={data.id} cartData={...data} updateTotalPrice={updateTotalPrice} onDeleteProduct={deleteProductHandler} />
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+          <div className="col-sm-10 col-lg-7 col-xl-5 border p-2">
+            <div >
+              <h4 >
+                Cart Totals
+              </h4>
+              <div >
+                <span >
+                  Subtotal:
+                </span>
+                <span >
+                  ₹{total}
+                </span>
+
+              </div>
+              <div >
+                <div >
+                  <span >
+                    Shipping:
+                  </span>
+                </div>
+                <div >
+                  <p >
+                    There are no shipping methods available. Please double check your address, or contact us if you need any help.
+                  </p>
+                  <div >
+                    <span >
+                      Calculate Shipping
+                    </span>
+                    <div >
+                      <select className="" name="time" tabindex="-1" aria-hidden="true">
+                        <option>Select a country...</option>
+                        <option>USA</option>
+                        <option>UK</option>
+                      </select>
+                      <div className="dropDownSelect2"></div>
+                    </div>
+                    <div className="bor8 bg0 m-b-12">
+                      <input className="" type="text" name="state" placeholder="State /  country" />
+                    </div>
+                    <div className="">
+                      <input className="" type="text" name="postcode" placeholder="Postcode / Zip" />
+                    </div>
+                    <div >
+                      <div >
+                        Update Totals
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div >
+                <div >
+                  <span >
+                    Total:
+                  </span>
+                </div>
+                <div >
+                  <span >
+                    ₹{total}
+                  </span>
+                </div>
+              </div>
+              <button >
+                Proceed to Checkout
+              </button>
+            </div>
+          </div>
         </div>}
-    </>
+    </div>
   );
 };
 

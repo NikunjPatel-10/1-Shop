@@ -2,13 +2,13 @@
    Brand Logo and Primary Navigation
 */
 .header {
-   background-color: #ffffff;
+   background-color: $primary;
    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
    .cart-items {
       top: -17%;
       right: -15%;
-      background-color: #6c7ae0;
+      background-color: $secondary;
       border-radius: 50%;
       height: 15px;
       width: 15px;
@@ -22,7 +22,7 @@
    }
 
    .logout-btn {
-      background-color: #6c7ae0;
+      background-color: $secondary;
       color: white;
    }
 
@@ -42,7 +42,7 @@
    }
 
    .nav-item :hover {
-      color: #6c7ae0;
+      color: $secondary;
       ;
    }
 }
@@ -51,7 +51,7 @@
    display: inline-block;
    // transform: translateY(0px);
    transition: 0.1s ease-in-out;
-   background-color: #fff;
+   background-color: $primary;
    color: black;
    list-style: none;
    position: absolute;

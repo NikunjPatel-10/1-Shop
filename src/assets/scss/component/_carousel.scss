@@ -5,7 +5,7 @@
     left: 15%;
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
-    color: white;
+    color: $primary;
     text-align: center;
 }
 
@@ -20,7 +20,7 @@
 
             &:hover {
                 border-right:
-                    17px solid #717fe0;
+                    17px solid $secondary;
             }
         }
 
@@ -33,7 +33,7 @@
 
             &:hover {
                 border-left:
-                    17px solid #717fe0;
+                    17px solid $secondary;
             }
         }
 
@@ -86,7 +86,7 @@
     min-width: 160px;
     height: 46px;
     border-radius: 23px;
-    background-color: #717fe0;
+    background-color: $secondary;
     color: white;
     border: none;
     animation-duration: 1s;
