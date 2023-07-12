@@ -109,18 +109,18 @@ const CartItem = ({ cartData, updateTotalPrice, onDeleteProduct }) => {
         </td>
         <td >
 
-          <div className="d-flex border">
+          <div className="d-flex ">
             <button
               className={`${cart.counter < 2 ? "disabled" : ""
-                } ${"remove-btn"}`}
+                } ${"remove-btn border"}`}
               onClick={() => removeHandler()}
             >
               <span>-</span>
             </button>
             <div className="quantity">
-              <span className="px-2">{cart.counter}</span>
+              <span className="px-2 ">{cart.counter}</span>
             </div>
-            <button className="add-btn" onClick={() => addHandler()}>
+            <button className="add-btn border" onClick={() => addHandler()}>
               <span>+</span>
             </button>
           </div>

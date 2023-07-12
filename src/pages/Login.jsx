@@ -6,6 +6,8 @@ import mainImg from './../assets/images/login-img.png'
 import logo from './../assets/images/logo.png'
 import { IconEye, IconEyeOff } from '@tabler/icons-react';
 import useRegisterData from '../hooks/useRegisterData';
+import { ToastContainer, toast } from 'react-toastify';
+
 
 const Login = () => {
     const getRegisterData = useRegisterData();
@@ -15,7 +17,26 @@ const Login = () => {
     useEffect(() => {
         setRegisterData(getRegisterData)
         console.log(resgisterData);
+
     }, [getRegisterData]);
+
+
+    const handleSubmit = (values) => {
+        let Auth = resgisterData.find((res) => res.email == values.email && res.password == values.password)
+
+        if (Auth) {
+            toast.success("Login Successfully", {
+                position: toast.POSITION.TOP_RIGHT
+            })
+            navigate("../home");
+            localStorage.setItem("auth", true)
+        }
+        else {
+            toast.warning("Invalid Credentials", {
+                position: toast.POSITION.TOP_RIGHT
+            })
+        }
+    }
 
     const initialValues = {
         email: "",
@@ -39,17 +60,7 @@ const Login = () => {
         setShowPassword(!showPassword);
     };
 
-    const handleSubmit = (values) => {
-        let Auth = resgisterData.find((res) => res.email == values.email && res.password == values.password)
-        if (Auth) {
-            alert("login sucessfully")
-            navigate("../home");
-            localStorage.setItem("auth", true)
-        }
-        else {
-            alert("Invalid credentials")
-        }
-    }
+
 
 
     return (
@@ -100,7 +111,7 @@ const Login = () => {
                                             placeholder="Password"
                                         />
                                         <button type="button" className=' border-0   bg-white eye-icon-btn' onClick={togglePasswordVisibility}>
-                                            {showPassword ? <IconEye className='text-secondary' /> : <IconEyeOff className='text-secondary' />}
+                                            {showPassword ? <IconEye className='text-gray' /> : <IconEyeOff className='text-gray' />}
                                         </button>
                                     </div>
                                     <ErrorMessage
@@ -128,6 +139,7 @@ const Login = () => {
                 <div className='col-12 col-sm-6 gx-0 h-100'>
                     <img src={mainImg} className='h-100 w-100' alt='no-img-found' />
                 </div>
+                <ToastContainer />
             </div>
         </div>
 

@@ -5,6 +5,7 @@ import * as Yup from "yup";
 import mainImg from './../assets/images/login-img.png';
 import logo from './../assets/images/logo.png'
 import { postRegistrationData } from '../services/RegisterDataService';
+import { ToastContainer, toast } from 'react-toastify';
 
 const Registration = () => {
     const navigate = useNavigate()
@@ -27,6 +28,9 @@ const Registration = () => {
 
     const handleSubmit = (values) => {
         // signUpWithEmailPassword(values);
+        toast.success('Registered Successfully', {
+            position: toast.POSITION.TOP_RIGHT
+        })
         postRegistrationData(values)
         navigate("../login");
     };
@@ -137,6 +141,7 @@ const Registration = () => {
                     <img src={mainImg} alt='img-not-found' className='h-100 w-100' />
                 </div>
             </div>
+            <ToastContainer />
         </div>
     )
 }

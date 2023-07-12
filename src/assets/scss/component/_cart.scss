@@ -26,25 +26,36 @@ td {
     background-color: white;
     border-radius: 5px;
     padding: 0 5px;
+    width: 45px;
+    height: 35px;
     border: none;
 
-    span {
-        display: inline-block;
-        width: 15px;
+    &:hover {
+        background-color: $secondary;
     }
+
+
+}
+
+.quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 45px;
 }
 
 .remove-btn {
-    // background-color: rgb(145, 188, 226);
     background-color: white;
     border-radius: 5px;
-    padding: 0 5px;
+    height: 35px;
+    width: 45px;
     border: none;
 
-    span {
-        display: inline-block;
-        width: 15px;
+    &:hover {
+        background-color: $secondary;
     }
+
 }
 
 .disabled {
@@ -58,8 +69,8 @@ td {
 .close {
     visibility: hidden;
     position: absolute;
-    left: 0%;
-    top: -10%;
+    left: 1%;
+    top: 7%;
     border-radius: 50%;
     height: 20px;
     width: 20px;
@@ -118,4 +129,34 @@ td {
 .empty-cart-image {
     width: 200px;
     height: auto;
+}
+
+.text-gray {
+    color: gray;
+}
+
+.no-wrap {
+    white-space: nowrap;
+}
+
+.checkout-btn {
+    background-color: #222;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    padding: 10px;
+
+    &:hover {
+        background-color: $secondary;
+    }
+}
+
+.Toastify__progress-bar--success {
+    background: $secondary
+}
+
+.Toastify__toast-icon {
+    svg {
+        fill: $secondary;
+    }
 }

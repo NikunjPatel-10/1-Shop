@@ -5,7 +5,6 @@ import useCartData from "../hooks/useCartData";
 import Context from "../context/Context";
 import { Carousel } from "react-bootstrap";
 import { ToastContainer, toast } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
 
 const DetailPage = () => {
 
