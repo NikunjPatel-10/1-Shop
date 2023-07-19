@@ -6,6 +6,8 @@ const Context = React.createContext({
   setCartItems: () => { },
   showSkeleton: boolean,
   setShowSkeleton: () => { },
+  isHeader: boolean,
+  setIsHeader: () => { }
 });
 
 export default Context;

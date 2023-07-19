@@ -1,5 +1,6 @@
 import React from 'react'
 import { Outlet, useNavigate } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
 
 const ProtectedRoute = () => {
     const navigate = useNavigate();
@@ -10,8 +11,11 @@ const ProtectedRoute = () => {
         navigate("/login")
     }
 
+
     return (
-        <Outlet />
+        <>
+            <Outlet />
+        </>
     )
 }
 

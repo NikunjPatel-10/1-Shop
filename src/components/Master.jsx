@@ -5,9 +5,19 @@ import { Outlet } from "react-router";
 import useCartData from "../hooks/useCartData";
 import Context from "../context/Context";
 import ProtectedRoute from "./ProtectedRoute";
+import { ToastContainer, toast } from "react-toastify";
 
 const Master = () => {
   const getCartData = useCartData();
+  const { setIsHeader } = useContext(Context)
+
+  const headerHandler = () => {
+    setIsHeader(false)
+  }
+
+
+  let i = 1
+  console.log(i + 1);
 
   const { setCartItems, cartItems } = useContext(Context);
 
@@ -21,7 +31,7 @@ const Master = () => {
       <div className="position-sticky top-0 z-2">
         <Header />
       </div>
-      <div className="flex-grow-1 ">
+      <div className="flex-grow-1" onClick={headerHandler}>
         <ProtectedRoute />
       </div>
       <Footer />

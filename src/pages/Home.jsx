@@ -4,6 +4,7 @@ import Card from "../components/Card";
 import useWomenData from "../hooks/useWomenData";
 import { useNavigate } from "react-router-dom";
 import CarouselData from "../components/Carousel";
+import { ToastContainer, toast } from "react-toastify";
 
 const Home = () => {
   const menProducts = useMenData();
@@ -15,6 +16,7 @@ const Home = () => {
   useEffect(() => {
     setWomenData(womenProducts.slice(-5));
   }, [womenProducts]);
+
 
   useEffect(() => {
     setMenData(menProducts.slice(-5));

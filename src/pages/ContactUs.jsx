@@ -122,7 +122,7 @@ const ContactUsPage = () => {
               ></textarea>
             </div>
             <div className="w-100 d-flex justify-content-center">
-              <button type="submit" className="btn btn-success ">
+              <button type="submit" className="btn btn-secondary text-white ">
                 Submit
               </button>
             </div>

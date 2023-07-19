@@ -138,9 +138,11 @@ const Cart = () => {
                   ₹{total}
                 </span>
               </div>
-              <button className="w-100 checkout-btn">
-                Proceed to Checkout
-              </button>
+              <Link to="/home">
+                <button className="w-100 checkout-btn" >
+                  Proceed to Checkout
+                </button>
+              </Link>
             </div>
           </div>
         </div>}

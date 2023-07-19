@@ -25,17 +25,12 @@ const Login = () => {
         let Auth = resgisterData.find((res) => res.email == values.email && res.password == values.password)
 
         if (Auth) {
-            toast.success("Login Successfully", {
-                position: toast.POSITION.TOP_RIGHT
-            })
             navigate("../home");
+
             localStorage.setItem("auth", true)
         }
-        else {
-            toast.warning("Invalid Credentials", {
-                position: toast.POSITION.TOP_RIGHT
-            })
-        }
+
+
     }
 
     const initialValues = {
@@ -139,7 +134,7 @@ const Login = () => {
                 <div className='col-12 col-sm-6 gx-0 h-100'>
                     <img src={mainImg} className='h-100 w-100' alt='no-img-found' />
                 </div>
-                <ToastContainer />
+
             </div>
         </div>
 

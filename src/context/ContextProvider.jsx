@@ -3,7 +3,8 @@ import Context from "./Context";
 
 const ContextProvider = (props) => {
   const [cartItems, setCartItems] = useState([]);
-  const [showSkeleton, setShowSkeleton] = useState(false)
+  const [showSkeleton, setShowSkeleton] = useState(false);
+  const [isHeader, setIsHeader] = useState(false)
 
   // useEffect(() => {
   //   console.log('context');
@@ -13,7 +14,9 @@ const ContextProvider = (props) => {
     cartItems,
     setCartItems,
     showSkeleton,
-    setShowSkeleton
+    setShowSkeleton,
+    isHeader,
+    setIsHeader,
   };
 
   return (

@@ -12,6 +12,22 @@
     }
 }
 
+
+@media(max-width:576px) {
+    .big-img-wrapper {
+        height: 450px;
+        overflow: hidden;
+        border-radius: 7px;
+        cursor: pointer;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
 .description-text {
     color: gray;
 }
@@ -39,7 +55,7 @@
 }
 
 .selected {
-    border: 2px solid blue;
+    border: 2px solid $secondary;
 }
 
 .carousel-container {
@@ -83,6 +99,38 @@
         // object-fit: cover;
     }
 }
+
+@media(max-width:576px) {
+    .carousel-img-wrapper {
+        height: 400px;
+        width: 400px;
+        overflow: hidden;
+
+        img {
+            height: 100%;
+            width: 100%;
+            // object-fit: cover;
+        }
+    }
+}
+
+@media(max-width:375px) {
+    .carousel-img-wrapper {
+        height: 280px;
+        width: 280px;
+        overflow: hidden;
+
+        img {
+            height: 100%;
+            width: 100%;
+            // object-fit: cover;
+        }
+    }
+}
+
+
+
+
 
 .Toastify__progress-bar--success {
     background: $secondary

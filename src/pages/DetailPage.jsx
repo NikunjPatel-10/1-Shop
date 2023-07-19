@@ -1,7 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { getProductsById, postCartProducts } from "../services/apiservice";
-import useCartData from "../hooks/useCartData";
 import Context from "../context/Context";
 import { Carousel } from "react-bootstrap";
 import { ToastContainer, toast } from "react-toastify";
@@ -12,7 +11,6 @@ const DetailPage = () => {
   const [imgIndex, setImgIndex] = useState(0);
   const { cartItems, setCartItems } = useContext(Context);
   const [isOverlayOpen, setIsOverlayOpen] = useState(false);
-  const [currentSlide, setCurrentSlide] = useState(0);
   const { id } = useParams();
   console.log(id);
   const navigate = useNavigate();
@@ -102,7 +100,7 @@ const DetailPage = () => {
 
           <div className="row ">
             {(detail.img) && (detail.img).map((img, index) => (
-              <div className="col-6 col-sm-3 my-1 " key={img.id} onClick={() => showimage(index)}>
+              <div className="col-6 col-sm-3 my-1 " key={index} onClick={() => showimage(index)}>
                 <figure className={`small-img-wrapper mb-0 ${index === imgIndex ? "selected" : ''}
                 `}>
                   <img src={img} alt="no-image found" />
@@ -112,7 +110,7 @@ const DetailPage = () => {
           </div>
         </div>
         <div className="col-12 col-sm-5 pb-5">
-          <div className=" pt-2 ps-5 ">
+          <div className=" pt-2  ">
             <h3 className="p-2 pb-2">  {detail.name}</h3>
             <p className="p-2 pb-2">  ₹ {detail.price}</p>
             <p className=" description-text mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora est corporis cum asperiores officiis incidunt rerum veniam praesentium dolores atque ullam, cumque quam ipsam tenetur!</p>

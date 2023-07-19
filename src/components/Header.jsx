@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { IconShoppingCart } from "@tabler/icons-react";
 import Context from "../context/Context";
 import { IconMenu2 } from '@tabler/icons-react';
@@ -9,7 +9,12 @@ const Header = () => {
   const navigate = useNavigate()
   // const quantity = cartItems.length
   // localStorage.setItem("quantity", cartItems);
-  const [showMenu, setShowmenu] = useState(false);
+  // const [showMenu, setShowmenu] = useState(false);
+  const { isHeader, setIsHeader } = useContext(Context);
+
+  // useEffect(() => {
+  //   setShowmenu(isHeader)
+  // }, [isHeader])
 
   const quantity = cartItems.length;
 
@@ -18,11 +23,14 @@ const Header = () => {
     navigate("../login")
   }
   const menuBarHandler = () => {
-    setShowmenu(true)
+    // setShowmenu(true);
+    setIsHeader(true)
+
   }
 
   const menuHandler = () => {
-    setShowmenu(false)
+    setIsHeader(false)
+    // setShowmenu(false)
   }
 
 
@@ -76,34 +84,34 @@ const Header = () => {
               <IconMenu2 className=" d-block d-sm-none" />
             </label>
           </div>
-          <input type="checkbox" checked={showMenu} id="mobile-nav" readOnly />
+          <input type="checkbox" checked={isHeader} id="mobile-nav" readOnly />
           <div className="mobile-size m-auto shadow " onClick={menuHandler}>
-            <div className="w-100   d-flex justify-content-center py-2">
+            <div className="w-100">
               <ul className="list-style m-0">
-                <li className="nav-item ">
-                  <Link className="nav-link " to={"/home"}>
+                <li className="nav-item">
+                  <NavLink className="nav-link " to={"/home"}>
                     Home
-                  </Link>
+                  </NavLink>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to={"/men"}>
+                  <NavLink className="nav-link" to={"/men"}>
                     Men
-                  </Link>
+                  </NavLink>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to={"/women"}>
+                  <NavLink className="nav-link" to={"/women"}>
                     Women
-                  </Link>
+                  </NavLink>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to={"/about"}>
+                  <NavLink className="nav-link" to={"/about"}>
                     About
-                  </Link>
+                  </NavLink>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to={"/contact-us"}>
+                  <NavLink className="nav-link" to={"/contact-us"}>
                     Contact-us
-                  </Link>
+                  </NavLink>
                 </li>
               </ul>
             </div>
