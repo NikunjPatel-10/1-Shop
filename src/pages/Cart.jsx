@@ -25,7 +25,6 @@ const Cart = () => {
   }, [getCartData])
 
 
-
   useEffect(() => {
     totalAmountHandler()
   }, [cartData])
@@ -40,6 +39,11 @@ const Cart = () => {
     setTotal(total + parseInt(updatedPrice));
   };
 
+
+  /**
+   * for delete cart item
+   * @param {*} deleteItemId 
+   */
   const deleteProductHandler = async (deleteItemId) => {
     if (deleteItemId) {
       await deleteCartProduct(deleteItemId);
@@ -49,6 +53,8 @@ const Cart = () => {
       setCartItems((prevData) => prevData.filter((item) => item.id !== deleteItemId))
     }
   }
+
+
 
   return (
     <div className="cart-wrapper">
@@ -78,14 +84,14 @@ const Cart = () => {
               <tbody>
                 {cartData.map((data) => {
                   return (
-                    <CartItem key={data.id} cartData={...data} updateTotalPrice={updateTotalPrice} onDeleteProduct={deleteProductHandler} />
+                    <CartItem key={data.id} cartData={data} updateTotalPrice={updateTotalPrice} onDeleteProduct={deleteProductHandler} />
                   );
                 })}
               </tbody>
             </table>
           </div>
           <div className="col-sm-10 col-lg-7 col-xl-5 ">
-            <div className="border m-2 p-3">
+            <div className="border m-sm-2 p-3">
 
               <h4 className="fw-bold mb-3">
                 Cart Totals
@@ -94,7 +100,7 @@ const Cart = () => {
                 <span className="col-3">
                   Subtotal:
                 </span>
-                <span className="col-9 text-gray ">
+                <span className="col-12 col-sm-9 text-gray ">
                   ₹{total}
                 </span>
 
@@ -134,7 +140,7 @@ const Cart = () => {
                 <span className="col-3">
                   Total:
                 </span>
-                <span className="col-9 text-gray ">
+                <span className="col-12 col-sm-9 text-gray ">
                   ₹{total}
                 </span>
               </div>

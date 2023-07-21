@@ -9,7 +9,6 @@ function App() {
   return (
     <ContextProvider>
       <Routing />
-
     </ContextProvider>
   );
 }
