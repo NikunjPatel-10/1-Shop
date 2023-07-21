@@ -76,7 +76,6 @@ const Login = () => {
                         >
                             <Form className="form-size">
                                 <div className="heading-text mb-4 px-3">
-                                    <h3>Login </h3>
                                 </div>
                                 <div className="mb-4 ">
                                     {/* <label htmlFor="email" className='m-2'>Email</label> */}

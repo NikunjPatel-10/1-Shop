@@ -53,7 +53,6 @@ const Registration = () => {
                         >
                             <Form className="register-form">
                                 <div className="heading-text mb-4 px-3">
-                                    <h3>Registration</h3>
                                 </div>
                                 <div className="mb-4 ">
                                     {/* <label htmlFor="email" className='m-2'>Email</label> */}
