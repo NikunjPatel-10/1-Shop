@@ -22,23 +22,21 @@ const Home = () => {
     setMenData(menProducts.slice(-5));
   }, [menProducts]);
 
-  const menListHandler = () => {
-    navigate("/men");
-  };
+  // const menListHandler = () => {
+  //   navigate("/men");
+  // };
 
-  const womenListHandler = () => {
-    navigate("/women");
-  };
+  // const womenListHandler = () => {
+  //   navigate("/women");
+  // };
 
   return (
     <>
       <CarouselData />
       <div className="main-wrapper p-2">
-        <div className="d-flex justify-content-between align-items-center ">
+        <div className="py-2 ">
           <span>For men</span>
-          <span className="see-all-text" onClick={menListHandler}>
-            SEE ALL
-          </span>
+
         </div>
         <div className="row">
           {menData.map((res) => {
@@ -47,11 +45,8 @@ const Home = () => {
           })}
         </div>
 
-        <div className="d-flex justify-content-between py-2">
+        <div className=" py-2">
           <span>For Women</span>
-          <span className="see-all-text" onClick={womenListHandler}>
-            SEE ALL
-          </span>
         </div>
         <div className="row">
           {womenData.map((res) => {
