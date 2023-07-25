@@ -27,6 +27,22 @@
         }
     }
 }
+@media(max-width:375px) {
+    .big-img-wrapper {
+        height: 450px;
+        overflow: hidden;
+        border-radius: 7px;
+        cursor: pointer;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+
 
 .description-text {
     color: gray;
