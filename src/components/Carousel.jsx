@@ -1,8 +1,10 @@
 import React, { useEffect } from "react";
 import { Carousel, CarouselItem } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 
 const CarouselData = () => {
 
+  const navigate = useNavigate()
   const carouselData = [
     {
       img: 'https://preview.colorlib.com/theme/cozastore/images/slide-03.jpg.webp',
@@ -19,10 +21,19 @@ const CarouselData = () => {
 
   ]
 
+  const carouselHandler = (index)=>{
+if(index === 1){
+  navigate('../women')
+}
+else{
+  navigate('../men')
+}
+  }
+
   return (
     <>
       <Carousel indicators={false} fade >
-        {carouselData.map((res) => {
+        {carouselData.map((res, index) => {
           return (
             <Carousel.Item key={res.heading}>
               <img
@@ -32,7 +43,7 @@ const CarouselData = () => {
               />
               <Carousel.Caption className="text-start ">
                 <h2 className="text-dark main-heading animated">{res.heading}</h2>
-                <button className=" shop-btn btn-animated">SHOP NOW</button>
+                <button className=" shop-btn btn-animated" onClick={()=>carouselHandler(index)}>SHOP NOW</button>
               </Carousel.Caption>
             </Carousel.Item>
           )
