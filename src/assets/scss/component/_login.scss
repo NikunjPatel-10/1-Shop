@@ -24,13 +24,14 @@
     }
 
 
-    .password-wrapper {
-        display: flex;
+    // .password-wrapper {
+    //     display: flex;
+    // }
 
+    .custom-password:focus-within {
         outline: none;
-    }
-
-
+        border-color: #ccc;
+      }
 
 
     .form-input {
@@ -39,8 +40,8 @@
 
 
     .password-wrapper button {
-        border: none;
-        outline: none;
+        // border: none;
+        // outline: none;
         background-color: $primary;
     }
 
@@ -72,8 +73,15 @@
     }
 }
 
+<<<<<<< HEAD
 .form-control .form-control:focus {
     border-color: gray;
+=======
+.form-control{
+&:focus {
+    border-color: #dee2e6;
+}
+>>>>>>> ccb0e0af86c9cd3a977c440f38d3777242cceca7
 }
 
 .Toastify__progress-bar--success {

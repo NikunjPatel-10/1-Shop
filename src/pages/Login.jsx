@@ -6,7 +6,6 @@ import mainImg from './../assets/images/login-img.png'
 import logo from './../assets/images/logo.png'
 import { IconEye, IconEyeOff } from '@tabler/icons-react';
 import useRegisterData from '../hooks/useRegisterData';
-import { ToastContainer, toast } from 'react-toastify';
 
 
 const Login = () => {
@@ -96,7 +95,7 @@ const Login = () => {
                                 </div>
                                 <div className="mb-4">
                                     {/* <label htmlFor="password" className='m-2'>Password</label> */}
-                                    <div className="password-wrapper form-control  rounded-pill">
+                                    <div className=" form-control d-flex custom-password rounded-pill">
                                         <Field
                                             type={showPassword ? "text" : "password"}
                                             id="password"

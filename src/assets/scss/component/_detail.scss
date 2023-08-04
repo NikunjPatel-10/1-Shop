@@ -27,6 +27,22 @@
         }
     }
 }
+@media(max-width:375px) {
+    .big-img-wrapper {
+        height: 450px;
+        overflow: hidden;
+        border-radius: 7px;
+        cursor: pointer;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+
 
 .description-text {
     color: gray;
@@ -91,6 +107,7 @@
 .carousel-img-wrapper {
     height: 550px;
     width: 550px;
+    border-radius: 7px;
     overflow: hidden;
 
     img {
@@ -104,6 +121,7 @@
     .carousel-img-wrapper {
         height: 400px;
         width: 400px;
+        border-radius: 7px;
         overflow: hidden;
 
         img {
@@ -118,6 +136,7 @@
     .carousel-img-wrapper {
         height: 280px;
         width: 280px;
+        border-radius: 7px;
         overflow: hidden;
 
         img {
