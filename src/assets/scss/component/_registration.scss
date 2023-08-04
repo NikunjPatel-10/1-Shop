@@ -34,4 +34,25 @@
     .register-btn {
         background-color: #f78b73;
     }
+
+
+}
+
+.register-image {
+    height: 100%;
+}
+
+.main-img-wrapper {
+    height: 100%;
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media(max-width: 576px) {
+    .register-image {
+        height: 50%;
+    }
 }

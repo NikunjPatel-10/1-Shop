@@ -72,7 +72,7 @@
     }
 }
 
-.form-control:focus {
+.form-control .form-control:focus {
     border-color: gray;
 }
 
@@ -88,4 +88,26 @@
     svg {
         fill: $secondary;
     }
+}
+
+.login-image {
+    height: 100%;
+}
+
+.main-img-wrapper {
+    height: 100%;
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width:576px) {
+
+    .login-image {
+        height: 50%;
+    }
+
+
 }

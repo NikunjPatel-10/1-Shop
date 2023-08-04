@@ -60,8 +60,8 @@ const Login = () => {
 
     return (
         <div className='login-wrapper h-100'>
-            <div className='row h-100 overflow-auto'>
-                <div className='col-12 col-sm-6 gx-0'>
+            <div className='row  h-100 overflow-auto'>
+                <div className='col-12 col-sm-6 gx-0 order-1'>
 
                     <div className=" h-100 d-flex  flex-column  align-items-center">
                         <div>
@@ -130,8 +130,10 @@ const Login = () => {
                         </Formik>
                     </div>
                 </div>
-                <div className='col-12 col-sm-6 gx-0 h-100'>
-                    <img src={mainImg} className='h-100 w-100' alt='no-img-found' />
+                <div className='col-12 col-sm-6 gx-0 login-image order-sm-2 '>
+                    <figure className='main-img-wrapper mb-0'>
+                        <img src={mainImg} alt='no-img-found' />
+                    </figure>
                 </div>
 
             </div>

@@ -38,7 +38,7 @@ const Registration = () => {
     return (
         <div className='registration-wrapper h-100'>
             <div className='row h-100 overflow-auto'>
-                <div className='col-12 col-sm-6 gx-0'>
+                <div className='col-12 col-sm-6 gx-0 order-1'>
 
                     <div className=" h-100 d-flex  flex-column  align-items-center">
                         <div>
@@ -136,8 +136,10 @@ const Registration = () => {
                         </Formik>
                     </div>
                 </div>
-                <div className='col-12 col-sm-6 gx-0 h-100'>
-                    <img src={mainImg} alt='img-not-found' className='h-100 w-100' />
+                <div className='col-12 col-sm-6 gx-0 register-image order-sm-2'>
+                    <figure className='main-img-wrapper mb-0'>
+                        <img src={mainImg} alt='img-not-found' />
+                    </figure>
                 </div>
             </div>
             <ToastContainer />
