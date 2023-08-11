@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { getProductsById, postCartProducts } from "../services/apiservice";
+import { getProductsById, postUserCartProducts, } from "../services/apiservice";
 import Context from "../context/Context";
 import { Carousel } from "react-bootstrap";
 import { ToastContainer, toast } from "react-toastify";
@@ -42,7 +42,8 @@ const DetailPage = () => {
   cartItem.quantity = 1;
   cartItem.totalPrice = cartItem.price;
   const cartDataHandler = () => {
-    postCartProducts(cartItem);
+    let userId = localStorage.getItem("user")
+    postUserCartProducts(cartItem, userId);
     // window.history.back();
     // navigate(-1);
     setCartItems((prevItems) => [...prevItems, cartItem])

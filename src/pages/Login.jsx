@@ -22,11 +22,13 @@ const Login = () => {
 
     const handleSubmit = (values) => {
         let Auth = resgisterData.find((res) => res.email == values.email && res.password == values.password)
-
+        let user = resgisterData.map((res) => res.id)
+        console.log(user);
         if (Auth) {
             navigate("../home");
 
             localStorage.setItem("auth", true)
+            localStorage.setItem('user', Auth.id)
         }
 
 
@@ -41,8 +43,8 @@ const Login = () => {
      * validate using yup
      */
     const validationSchema = Yup.object().shape({
-        email: Yup.string().email("Invalid email").required("email is required"),
-        password: Yup.string().required("password is required"),
+        email: Yup.string().email("Invalid email").required("Email is required"),
+        password: Yup.string().required("Password is required"),
     });
 
     const [showPassword, setShowPassword] = useState(false);

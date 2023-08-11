@@ -10,19 +10,21 @@ import { ToastContainer, toast } from "react-toastify";
 const Cart = () => {
   const getCartData = useCartData();
   const [total, setTotal] = useState(0);
-
+  const userId = localStorage.getItem("user")
   const { setCartItems, cartItems } = useContext(Context);
   // const cartData = cartItems
-  const [cartData, setCartData] = useState([cartItems])
+  useEffect(() => {
+    setCartItems(getCartData)
+    console.log(getCartData);
+  }, [getCartData])
+
+  const [cartData, setCartData] = useState(cartItems)
   console.log(cartData);
 
   useEffect(() => {
     setCartData(cartItems);
   }, [cartItems]);
 
-  useEffect(() => {
-    setCartItems(getCartData)
-  }, [getCartData])
 
 
   useEffect(() => {
@@ -45,8 +47,11 @@ const Cart = () => {
    * @param {*} deleteItemId 
    */
   const deleteProductHandler = async (deleteItemId) => {
+
+    // getUserCartDataById(userId);
+
     if (deleteItemId) {
-      await deleteCartProduct(deleteItemId);
+      await deleteCartProduct(userId, deleteItemId);
       toast.success("deleted Sucessfully", {
         position: toast.POSITION.TOP_RIGHT
       })
@@ -60,12 +65,12 @@ const Cart = () => {
     <div className="cart-wrapper">
       <div className="cart-container"></div>
       {(cartItems.length < 1) ?
-        <div class="empty-cart ">
+        <div className="empty-cart ">
           <figure className="mb-0 bg-primary empty-cart-wrapper">
             <img src={emptyCart} />
           </figure>
           <h3>Your Cart is Empty</h3>
-          <h4>Add something to make me happy :)</h4>
+          <h4>Add something to make me happy : &#41;</h4>
           <Link to={'/home'}>
             <button className="continue-btn">continue shopping</button>
           </Link>

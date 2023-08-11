@@ -34,21 +34,21 @@ const Home = () => {
     <>
       <CarouselData />
       <div className="main-wrapper p-2">
-        <div className="py-2 ">
+        <div className="py-2   px-5 d-none d-sm-block ">
           <span>For men</span>
 
         </div>
-        <div className="row">
+        <div className="row justify-content-center">
           {menData.map((res) => {
             // console.log(res);
             return <Card key={res.id} cardData={res} />;
           })}
         </div>
 
-        <div className=" py-2">
+        <div className=" py-2  px-5 d-none d-sm-block ">
           <span>For Women</span>
         </div>
-        <div className="row">
+        <div className="row justify-content-center">
           {womenData.map((res) => {
             // console.log(res);
             return <Card key={res.id} cardData={res} />;

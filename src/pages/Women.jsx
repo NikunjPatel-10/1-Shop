@@ -17,7 +17,7 @@ const Women = () => {
 
   return (
     <div className="womenpage-wrapper">
-      <div className="row">
+      <div className="row justify-content-center">
         {womenProducts.map((res) => {
           // console.log(res);
           return <Card key={res.id} cardData={res} />;

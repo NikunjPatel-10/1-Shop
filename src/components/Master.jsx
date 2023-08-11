@@ -16,8 +16,6 @@ const Master = () => {
   }
 
 
-  let i = 1
-  console.log(i + 1);
 
   const { setCartItems, cartItems } = useContext(Context);
 
