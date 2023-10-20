@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="footer-wrapper d-flex justify-content-center align-items-center ">
-      <div className="d-flex justify-content-center nav-wrapper p-3">
+      <div className="d-flex justify-content-center nav-wrapper  p-3 w-100">
         <nav>
           <ul className="d-flex flex-column ">
             <li className="nav-item">Main Menu</li>
