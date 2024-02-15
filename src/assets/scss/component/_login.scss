@@ -74,24 +74,14 @@
 }
 
 .form-control {
+    font-size: 14px;
+
     &:focus {
         border-color: #dee2e6;
     }
 }
 
-.Toastify__progress-bar--success {
-    background: $secondary
-}
 
-.Toastify__progress-bar--warning {
-    background: $secondary
-}
-
-.Toastify__toast-icon {
-    svg {
-        fill: $secondary;
-    }
-}
 
 .login-image {
     height: 100%;

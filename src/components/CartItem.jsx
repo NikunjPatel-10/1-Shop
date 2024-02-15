@@ -73,7 +73,7 @@ const CartItem = ({ cartData, updateTotalPrice, onDeleteProduct }) => {
 
   return (
     <>
-      <tr className=" justify-content-between cart-item p-2 position-relative border">
+      <tr className=" justify-content-between cart-item p-2 position-relative border ">
         <td >
           <div className="d-flex" >
             <figure className="cart-img-wrapper mb-0 d-flex justify-content-center align-items-center me-3">

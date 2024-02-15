@@ -35,7 +35,6 @@ const Home = () => {
       <CarouselData />
       <div className="main-wrapper p-2">
         <div className="py-2   px-5 d-none d-sm-block ">
-          <span>For men</span>
 
         </div>
         <div className="row justify-content-center">
@@ -46,7 +45,6 @@ const Home = () => {
         </div>
 
         <div className=" py-2  px-5 d-none d-sm-block ">
-          <span>For Women</span>
         </div>
         <div className="row justify-content-center">
           {womenData.map((res) => {

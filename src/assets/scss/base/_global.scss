@@ -13,3 +13,17 @@ body {
     ;
     overflow: hidden;
 }
+
+.Toastify__progress-bar--success {
+    background: $secondary
+}
+
+.Toastify__progress-bar--warning {
+    background: $secondary
+}
+
+.Toastify__toast-icon {
+    svg {
+        fill: $secondary;
+    }
+}

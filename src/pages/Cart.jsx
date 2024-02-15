@@ -78,7 +78,7 @@ const Cart = () => {
         : <div className="h-100 row  m-3 ">
 
           <div className="col-lg-10 col-xl-7 overflow-auto">
-            <table className="table table-striped w-100 border">
+            <table className="table table-striped w-100 border rounded">
               <thead className="border">
                 <tr>
                   <th scope="col">Product</th>
@@ -96,7 +96,7 @@ const Cart = () => {
             </table>
           </div>
           <div className="col-sm-10 col-lg-7 col-xl-5 ">
-            <div className="border m-sm-2 p-3">
+            <div className="border rounded m-sm-2 p-3">
 
               <h4 className="fw-bold mb-3">
                 Cart Totals

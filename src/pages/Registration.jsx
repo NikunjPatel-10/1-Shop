@@ -27,6 +27,7 @@ const Registration = () => {
 
 
     const handleSubmit = (values) => {
+        
         // signUpWithEmailPassword(values);
         toast.success('Registered Successfully', {
             position: toast.POSITION.TOP_RIGHT
@@ -142,7 +143,7 @@ const Registration = () => {
                     </figure>
                 </div>
             </div>
-            <ToastContainer />
+            {/* <ToastContainer /> */}
         </div>
     )
 }

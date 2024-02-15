@@ -17,10 +17,13 @@
         width: 70%;
     }
 
-    .form-control :focus {
-        border-color: #dee2e6;
+    .form-control {
+        font-size: 14px;
+    
+        &:focus {
+            border-color: #dee2e6;
+        }
     }
-
     .error-message {
         color: red;
         padding-inline: 10px;

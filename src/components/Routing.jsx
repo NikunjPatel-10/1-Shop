@@ -26,8 +26,8 @@ const Routing = () => {
         <Route path="/contact-us" element={<ContactUs />}></Route>
         <Route path="/details/:id" element={<DetailPage />}></Route>
         <Route path="/cart" element={<Cart />}></Route>
+        <Route path="*" element={<PagenotFound />}></Route>
       </Route>
-      <Route path="*" element={<PagenotFound />}></Route>
     </Routes>
   );
 };

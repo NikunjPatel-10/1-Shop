@@ -14,7 +14,7 @@ const About = () => {
             <p className="description-text">Donec gravida lorem elit, quis condimentum ex semper sit amet. Fusce eget ligula magna. Aliquam aliquam imperdiet sodales. Ut fringilla turpis in vehicula vehicula. Pellentesque congue ac orci ut gravida. Aliquam erat volutpat. Donec iaculis lectus a arcu facilisis, eu sodales lectus sagittis. Etiam pellentesque, magna vel dictum rutrum, neque justo eleifend elit, vel tincidunt erat arcu ut sem. Sed rutrum, turpis ut commodo efficitur, quam velit convallis ipsum, et maximus enim ligula ac ligula.</p>
             <p className="description-text">Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call us on (+1) 96 716 6879</p>
           </div>
-          <div className="col-12 col-sm-5 gx-0 p-2 mt-4">
+          <div className="col-12 col-sm-5 gx-0  mt-4">
             <figure className="about-us-img-wrapper mb-0 w-100">
               <img src="https://preview.colorlib.com/theme/cozastore/images/about-01.jpg.webp" />
             </figure>
@@ -22,7 +22,7 @@ const About = () => {
         </div>
         <div className="row">
 
-          <div className="col-12 col-sm-5 gx-0 p-2">
+          <div className="col-12 col-sm-5 gx-0  mt-4">
             <figure className="about-us-img-wrapper mb-0 w-100">
               <img src="https://preview.colorlib.com/theme/cozastore/images/about-02.jpg.webp" />
             </figure>

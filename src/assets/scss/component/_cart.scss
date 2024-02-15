@@ -145,18 +145,9 @@ td {
     border: none;
     color: white;
     padding: 10px;
+    white-space: nowrap;
 
     &:hover {
         background-color: $secondary;
-    }
-}
-
-.Toastify__progress-bar--success {
-    background: $secondary
-}
-
-.Toastify__toast-icon {
-    svg {
-        fill: $secondary;
     }
 }

@@ -33,6 +33,7 @@ const Master = () => {
         <ProtectedRoute />
       </div>
       <Footer />
+      <ToastContainer/>
     </div>
 
   );
