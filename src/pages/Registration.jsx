@@ -29,9 +29,9 @@ const Registration = () => {
     const handleSubmit = (values) => {
         
         // signUpWithEmailPassword(values);
-        toast.success('Registered Successfully', {
-            position: toast.POSITION.TOP_RIGHT
-        })
+        // toast.success('Registered Successfully', {
+        //     position: toast.POSITION.TOP_RIGHT
+        // })
         postRegistrationData(values)
         navigate("../login");
     };

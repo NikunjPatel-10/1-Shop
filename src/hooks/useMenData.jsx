@@ -12,33 +12,38 @@ const useMenData = () => {
     setShowSkeleton(true)
     getMenProducts()
       .then((response) => {
-        // console.log(response);
-        setTimeout(() => {
-
-          setShowSkeleton(false)
-        }, 500)
-        const responseData = [];
-        for (const key in response.data) {
-          const id = key;
-          const shortData = response.data;
-
-          const item = {
-            id: id,
-            name: shortData[id].name,
-            img: shortData[id].img[0],
-            price: shortData[id].price,
-            category: shortData[id].category,
-          };
-
-          responseData.push(item);
+        if(response){
+          const responseData = [];
+          for (const key in response.data) {
+            const id = key;
+            const shortData = response.data;
+  
+            const item = {
+              id: id,
+              name: shortData[id].name,
+              img: shortData[id].img[0],
+              price: shortData[id].price,
+              category: shortData[id].category,
+            };
+  
+            responseData.push(item);
+          }
+          setMenProducts(responseData);
+  
         }
-        setMenProducts(responseData);
+        setShowSkeleton(false)    
+        // console.log(response);
 
+            // setTimeout(() => {
+
+        // }, 500)
+        
       })
       .catch((error) => {
+        setShowSkeleton(false)
         console.log("error while fetching the men clothes", error);
       });
-  }, []);
+  }, [setShowSkeleton]);
   return menProducts;
 };
 

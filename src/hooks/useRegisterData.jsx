@@ -1,11 +1,12 @@
-import React, { useEffect, useState } from 'react'
+import { useState, useCallback, useEffect } from 'react';
 import { getRegistrationData } from '../services/RegisterDataService';
 
 const useRegisterData = () => {
-    const [resgisterData, setRegisterData] = useState([]);
+    const [registerData, setRegisterData] = useState([]);
 
-    useEffect(() => {
-        getRegistrationData().then((response) => {
+    const fetchRegisterData = useCallback(async () => {
+        try {
+            const response = await getRegistrationData();
             const responseData = [];
             for (const key in response.data) {
                 const id = key;
@@ -18,13 +19,19 @@ const useRegisterData = () => {
                 };
                 responseData.push(registrationData);
             }
-            setRegisterData(responseData)
-        }).catch((error) => {
-            console.log("error while getting user Data", error);
-        })
-    }, [])
-    return resgisterData;
+            setRegisterData(responseData);
+            return responseData;
+        } catch (error) {
+            console.log("Error while getting user data", error);
+            throw error;
+        }
+    }, []);
 
-}
+    useEffect(() => {
+        fetchRegisterData();
+    }, [fetchRegisterData]);
 
-export default useRegisterData
+    return [registerData, fetchRegisterData];
+};
+
+export default useRegisterData;

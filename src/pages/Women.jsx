@@ -1,6 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import useWomenData from "../hooks/useWomenData";
 import Card from "../components/Card";
+import Context from "../context/Context";
+import Skeleton from "../components/Skeleton";
 
 const Women = () => {
 
@@ -8,8 +10,9 @@ const Women = () => {
    * get the data from womendata hook
    */
   const data = useWomenData();
-
+const {showSkeleton} = useContext(Context)
   const [womenProducts, setWomenProducts] = useState([]);
+  const skeletonArray = Array(womenProducts.length || 6).fill()
 
   useEffect(() => {
     setWomenProducts(data);
@@ -18,10 +21,10 @@ const Women = () => {
   return (
     <div className="womenpage-wrapper">
       <div className="row justify-content-center">
-        {womenProducts.map((res) => {
-          // console.log(res);
+        {showSkeleton ? skeletonArray.map((_, index)=>  <Skeleton key={index} />) : womenProducts.map((res) => {
           return <Card key={res.id} cardData={res} />;
         })}
+        {}
       </div>
     </div>
   );

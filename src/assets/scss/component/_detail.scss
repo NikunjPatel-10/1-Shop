@@ -1,6 +1,5 @@
 .big-img-wrapper {
-    height: 450px;
-    // width: 400px;
+    height: 50vh; // Example of a flexible height
     overflow: hidden;
     border-radius: 7px;
     cursor: pointer;
@@ -12,35 +11,22 @@
     }
 }
 
-
-@media(max-width:576px) {
+@media (max-width: 576px) {
     .big-img-wrapper {
-        height: 450px;
-        overflow: hidden;
-        border-radius: 7px;
-        cursor: pointer;
-
         img {
-            height: 100%;
-            width: 100%;
             object-fit: contain;
         }
     }
 }
-@media(max-width:375px) {
-    .big-img-wrapper {
-        height: 450px;
-        overflow: hidden;
-        border-radius: 7px;
-        cursor: pointer;
 
+@media (max-width: 375px) {
+    .big-img-wrapper {
         img {
-            height: 100%;
-            width: 100%;
             object-fit: contain;
         }
     }
 }
+
 
 
 

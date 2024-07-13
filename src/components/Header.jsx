@@ -1,12 +1,12 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
-import { IconShoppingCart } from "@tabler/icons-react";
+import { IconShoppingCart, IconX } from "@tabler/icons-react";
 import Context from "../context/Context";
-import { IconMenu2 } from '@tabler/icons-react';
+import { IconMenu2 } from "@tabler/icons-react";
 
 const Header = () => {
   const { cartItems } = useContext(Context);
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   // const quantity = cartItems.length
   // localStorage.setItem("quantity", cartItems);
   // const [showMenu, setShowmenu] = useState(false);
@@ -20,20 +20,17 @@ const Header = () => {
 
   const onLogout = () => {
     localStorage.removeItem("auth");
-    navigate("../login")
-  }
+    navigate("../login");
+  };
   const menuBarHandler = () => {
     // setShowmenu(true);
-    setIsHeader(true)
-
-  }
+    setIsHeader(true);
+  };
 
   const menuHandler = () => {
-    setIsHeader(false)
+    setIsHeader(false);
     // setShowmenu(false)
-  }
-
-
+  };
 
   return (
     <div className="d-flex header w-100 position-relative py-2 ">
@@ -80,13 +77,17 @@ const Header = () => {
       <div className="d-block d-sm-none  w-100 ">
         <div className="d-flex align-items-center justify-content-between w-100 p-2">
           <div className=" d-flex justify-content-start align-items-center">
-            <label htmlFor="mobile-nav" onClick={menuBarHandler} >
-              <IconMenu2 className=" d-block d-sm-none" />
+            <label htmlFor="mobile-nav" onClick={menuBarHandler}>
+              <IconMenu2 className=" d-block d-sm-none " />
             </label>
           </div>
           <input type="checkbox" checked={isHeader} id="mobile-nav" readOnly />
-          <div className="mobile-size m-auto shadow " onClick={menuHandler}>
+          <div className="mobile-size m-auto shadow " >
             <div className="w-100">
+              <div className="close-icon">
+                {" "}
+                <IconX onClick={menuHandler}  />
+              </div>
               <ul className="list-style m-0">
                 <li className="nav-item">
                   <NavLink className="nav-link " to={"/home"}>
@@ -129,7 +130,9 @@ const Header = () => {
       </div>
 
       <div className="d-flex justify-content-center align-items-center me-sm-3 me-2">
-        <button className=" btn logout-btn btn-sm" onClick={onLogout}>Logout</button>
+        <button className=" btn logout-btn btn-sm" onClick={onLogout}>
+          Logout
+        </button>
       </div>
     </div>
   );

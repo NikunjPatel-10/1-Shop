@@ -1,12 +1,11 @@
 import React, { useContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Context from "../context/Context";
+
 
 
 const Card = ({ cardData }) => {
-  // const [cartdata, setCartdata] = useState(false)
 
-  const { showSkeleton } = useContext(Context)
+
   const navigate = useNavigate();
 
   /**
@@ -18,27 +17,7 @@ const Card = ({ cardData }) => {
   };
 
 
-  // useEffect(() => {
-  //   setCartdata(true)
-  // }, [cardData])
 
-
-
-  /**
-   * when the data is not loaded
-   */
-  if (showSkeleton) {
-    return (
-      <div className="card col-12 col-sm-6 col-md-4 m-2 p-2 gx-0 skeleton-card ">
-        <div className="skeleton-img"></div>
-        <div className="skeleton-text">
-          <div className="skeleton-text-line"></div>
-          <div className="skeleton-text-line"></div>
-        </div>
-      </div>
-    )
-  }
-  else {
     return (
       <div
         className="card col-12 col-sm-6 col-md-4  m-2 p-2 gx-0 position-relative"
@@ -56,7 +35,7 @@ const Card = ({ cardData }) => {
         </div>
       </div>
     )
-  }
+  
 
 };
 

@@ -5,6 +5,7 @@ import { IconX } from "@tabler/icons-react";
 
 const CartItem = ({ cartData, updateTotalPrice, onDeleteProduct }) => {
   const { name, img, price, category, id, quantity, totalPrice } = cartData;
+  console.log(img);
 
 
   const [cart, setCart] = useState({
@@ -77,7 +78,7 @@ const CartItem = ({ cartData, updateTotalPrice, onDeleteProduct }) => {
         <td >
           <div className="d-flex" >
             <figure className="cart-img-wrapper mb-0 d-flex justify-content-center align-items-center me-3">
-              <img src={img} alt="no img found" />
+              <img src={img[0]} alt="no img found" />
             </figure>
             <p className="mb-0 d-flex align-items-center">{name}</p>
           </div>

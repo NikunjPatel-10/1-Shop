@@ -51,6 +51,12 @@
       background-color: rgba(149, 157, 165, 0.2);
       ;
    }
+
+   .close-icon {
+      text-align: end;
+      padding: 5px;
+      cursor: pointer;
+   }
 }
 
 #mobile-nav:checked+.mobile-size {

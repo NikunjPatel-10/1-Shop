@@ -4,16 +4,14 @@ import { getProductsById, postUserCartProducts, } from "../services/apiservice";
 import Context from "../context/Context";
 import { Carousel } from "react-bootstrap";
 import { ToastContainer, toast } from "react-toastify";
+import useCartData from "../hooks/useCartData";
 
 const DetailPage = () => {
-
   const [detail, setDetail] = useState({});
   const [imgIndex, setImgIndex] = useState(0);
   const { cartItems, setCartItems } = useContext(Context);
   const [isOverlayOpen, setIsOverlayOpen] = useState(false);
   const { id } = useParams();
-  console.log(id);
-  const navigate = useNavigate();
 
 
 
@@ -42,15 +40,22 @@ const DetailPage = () => {
   cartItem.quantity = 1;
   cartItem.totalPrice = cartItem.price;
   const cartDataHandler = () => {
-    let userId = localStorage.getItem("user")
-    postUserCartProducts(cartItem, userId);
-    // window.history.back();
-    // navigate(-1);
-    setCartItems((prevItems) => [...prevItems, cartItem])
-    // console.log(cartItems);\
-    toast.success('Add to cart Successfully', {
-      position: toast.POSITION.TOP_RIGHT,
-    });
+    let userId = localStorage.getItem("user");
+    // const cartItem = { ...detail, quantity: 1, totalPrice: detail.price };
+
+    if (cartItems.find(item => item.id === cartItem.id)) {
+      toast.success('Item is already in the cart', {
+        position: toast.POSITION.TOP_RIGHT,
+      });
+    } 
+    else {
+      postUserCartProducts(cartItem, userId);
+      setCartItems((prevItems) => [...prevItems, cartItem]);
+      toast.success('Added to cart successfully', {
+        position: toast.POSITION.TOP_RIGHT,
+      });
+    }
+   
   };
 
   const showimage = (index) => {
