@@ -16,7 +16,6 @@ const ContactUsPage = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-
   const defaultProps = {
     center: {
       lat: 10.99835602,
@@ -49,49 +48,39 @@ const ContactUsPage = () => {
 
   return (
     <div className="contact-us-wrapper">
-
-      <div className="contact-us-container  row">
-        <div className="col-12 col-sm-6 p-2">
+      <div className="contact-us-container row">
+        <div className="col-12 col-md-6 p-4">
           <div>
-            <div>
-              <h2>1 SHOP</h2>
-              <p>
-                DailyShop Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit. Rerum modi dolor facilis! Nihil error, eius.
-              </p>
-            </div>
+            <h2>1 SHOP</h2>
+            <p>
+              DailyShop Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit. Rerum modi dolor facilis! Nihil error, eius.
+            </p>
             <div className="d-flex flex-column">
-              <div className="mb-2">
-                <IconHome2 /> <span>Huntsville, AL 35813, USA</span>
+              <div className="mb-2 d-flex align-items-center">
+                <IconHome2 className="me-2" /> <span>Huntsville, AL 35813, USA</span>
               </div>
-              <div className="mb-2">
-                {" "}
-                <IconPhoneCall /> <span>+ 021.343.7575</span>
+              <div className="mb-2 d-flex align-items-center">
+                <IconPhoneCall className="me-2" /> <span>+ 021.343.7575</span>
               </div>
-              <div className="mb-2">
-                <IconMailFilled /> <span>Email: support@dailyshop.com</span>
+              <div className="mb-2 d-flex align-items-center">
+                <IconMailFilled className="me-2" /> <span>Email: support@dailyshop.com</span>
               </div>
             </div>
           </div>
           <div className="mt-3">
-            <h2>follow us</h2>
-            <span className="pe-2">
-              <IconBrandFacebookFilled />
-            </span>
-            <span className="pe-2">
-              <IconBrandTwitterFilled />
-            </span>
-            <span className="pe-2">
-              <IconBrandInstagram />
-            </span>
-            <span className="pe-2">
-              <IconBrandGoogle />
-            </span>
+            <h2>Follow Us</h2>
+            <div className="social-icons d-flex">
+              <IconBrandFacebookFilled className="me-2" />
+              <IconBrandTwitterFilled className="me-2" />
+              <IconBrandInstagram className="me-2" />
+              <IconBrandGoogle className="me-2" />
+            </div>
           </div>
         </div>
-        <div className="col-12 col-sm-6 p-3">
-          <form className="contact-form border rounded p-2" onSubmit={handleSubmit}>
-            <h2>Contact-Us </h2>
+        <div className="col-12 col-md-6 p-4">
+          <form className="contact-form border rounded p-3" onSubmit={handleSubmit}>
+            <h2>Contact Us</h2>
             <div className="form-group">
               <label htmlFor="name">Name:</label>
               <input
@@ -122,20 +111,18 @@ const ContactUsPage = () => {
               ></textarea>
             </div>
             <div className="w-100 d-flex justify-content-center">
-              <button type="submit" className="btn btn-secondary text-white ">
+              <button type="submit" className="btn btn-secondary text-white">
                 Submit
               </button>
             </div>
           </form>
         </div>
       </div>
-
-      <div style={{ height: '60vh', width: '100%' }} className="p-2 ">
+      <div className="map-container" style={{ height: '60vh', width: '100%' }}>
         <GoogleMapReact
           bootstrapURLKeys={{ key: "AIzaSyClKKb1cMAt1LmTuQKa8SZAr4k9JFg36IY" }}
           defaultCenter={defaultProps.center}
           defaultZoom={defaultProps.zoom}
-
         >
           <Map
             lat={59.955413}
@@ -143,9 +130,8 @@ const ContactUsPage = () => {
             text="My Marker"
           />
         </GoogleMapReact>
-        {/* <iframe aria-hidden="true" frameborder="0" tabindex="-1" style={{ z-index: "-1", position: "absolute", width: "100%", height: "100%", top: '0px', left: '0px', border: 'none'}}></iframe> */}
       </div>
-    </div >
+    </div>
   );
 };
 

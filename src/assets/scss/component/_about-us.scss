@@ -1,32 +1,43 @@
 .about-us-wrapper {
     height: 100%;
-    width: 75%;
+    width: 90%;
     margin: auto;
-
+    @media (min-width: 768px) {
+      width: 75%;
+    }
+  
     .description-text {
-        color: #888;
-        font-family: "Poppins-Light";
-        font-size: 18px;
-        line-height: 1.78;
-
+      color: #888;
+      font-family: "Poppins-Light";
+      font-size: 18px;
+      line-height: 1.78;
+      margin-bottom: 1rem;
     }
-}
-
-.about-us-img-wrapper {
-    height: 90%;
-    overflow: hidden;
-    border-radius: 10px;
-    cursor: pointer;
-
-    img {
-        height: 100%;
+  
+    .about-us-img-wrapper {
+      height: auto;
+      overflow: hidden;
+      border-radius: 10px;
+      cursor: pointer;
+  
+      img {
         width: 100%;
-        // object-fit: cover;
-    }
-
-    :hover {
+        height: auto;
+        object-fit: cover;
+      }
+  
+      :hover {
         transition: all 0.2s linear;
-        transform: scale(1.2);
+        transform: scale(1.05);
+      }
     }
-
-}
+  
+    .d-flex {
+      align-items: center;
+  
+      .ms-3 {
+        margin-left: 1rem;
+      }
+    }
+  }
+  

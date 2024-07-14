@@ -78,7 +78,7 @@ const Header = () => {
         <div className="d-flex align-items-center justify-content-between w-100 p-2">
           <div className=" d-flex justify-content-start align-items-center">
             <label htmlFor="mobile-nav" onClick={menuBarHandler}>
-              <IconMenu2 className=" d-block d-sm-none " />
+              <IconMenu2 className=" d-block d-sm-none cursor-pointer " />
             </label>
           </div>
           <input type="checkbox" checked={isHeader} id="mobile-nav" readOnly />
@@ -86,7 +86,7 @@ const Header = () => {
             <div className="w-100">
               <div className="close-icon">
                 {" "}
-                <IconX onClick={menuHandler}  />
+                <IconX onClick={menuHandler} height={30} width={30} />
               </div>
               <ul className="list-style m-0">
                 <li className="nav-item">
